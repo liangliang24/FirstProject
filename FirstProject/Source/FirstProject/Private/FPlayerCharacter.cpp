@@ -78,6 +78,8 @@ void AFPlayerCharacter::InCrouch()
 
 void AFPlayerCharacter::OutCrouch()
 {
+
+
 	UnCrouch(true);
 }
 
