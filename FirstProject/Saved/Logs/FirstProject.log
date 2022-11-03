@@ -823,3 +823,13 @@ LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
 [2022.11.03-02.06.29:784][732]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
 [2022.11.03-02.06.29:936][733]Display: Reload/Re-instancing Complete: 1 package changed, 1 class new, 1 class unchanged
 [2022.11.03-02.06.29:936][733]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2022.11.03-02.08.23:345][ 71]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=2490W1G5 (NVIDIA High Definition Audio), InstanceID=1
+[2022.11.03-02.08.23:346][ 71]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=22736
+[2022.11.03-02.08.23:671][ 71]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=扬声器 (Realtek(R) Audio), InstanceID=1
+[2022.11.03-02.08.23:671][ 71]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{647fab86-87b0-4eb4-8d2b-25f46603c192}, Name=2490W1G5 (NVIDIA High Definition Audio)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=48.02
+[2022.11.03-02.08.23:672][ 71]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2022.11.03-02.08.23:688][ 72]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2022.11.03-02.08.24:012][ 73]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=22736
+[2022.11.03-02.08.24:345][ 73]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{7fe21e9f-69c1-4f60-84b5-535ca0774a1a}, Name=扬声器 (Realtek(R) Audio)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=91.57
+[2022.11.03-02.08.24:345][ 73]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2022.11.03-02.08.24:360][ 74]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
