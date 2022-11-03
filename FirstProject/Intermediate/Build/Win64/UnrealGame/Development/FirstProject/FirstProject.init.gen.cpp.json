@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\ue\\firstproject\\firstproject\\intermediate\\build\\win64\\unrealgame\\inc\\firstproject\\firstproject.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\ue\\firstproject\\firstproject\\intermediate\\build\\win64\\firstproject\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\ue\\firstproject\\firstproject\\intermediate\\build\\win64\\unrealgame\\development\\firstproject\\definitions.firstproject.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
