@@ -68,5 +68,7 @@ void AFPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	InputComponent->BindAxis("MoveRight",this,&AFPlayerCharacter::Right);
 	InputComponent->BindAxis("Turn",this,&APawn::AddControllerYawInput);
 	InputComponent->BindAxis("Up",this,&APawn::AddControllerPitchInput);
+
+	InputComponent->BindAction("Jump",IE_Pressed,this,&ACharacter::Jump);
 }
 
