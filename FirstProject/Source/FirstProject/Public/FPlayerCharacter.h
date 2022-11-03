@@ -17,6 +17,9 @@ public:
 	// Sets default values for this character's properties
 	AFPlayerCharacter();
 
+
+	
+
 protected:
 	UPROPERTY(BlueprintReadOnly)
 	float WalkFastSpeed;
