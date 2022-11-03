@@ -16,6 +16,14 @@ void EmptyLinkFunctionForGeneratedCodeFPlayerCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AFPlayerCharacter::execRight)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_value);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Right(Z_Param_value);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AFPlayerCharacter::execMoveForward)
 	{
 		P_GET_PROPERTY(FFloatProperty,Z_Param_value);
@@ -29,6 +37,7 @@ void EmptyLinkFunctionForGeneratedCodeFPlayerCharacter() {}
 		UClass* Class = AFPlayerCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "MoveForward", &AFPlayerCharacter::execMoveForward },
+			{ "Right", &AFPlayerCharacter::execRight },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -64,6 +73,38 @@ void EmptyLinkFunctionForGeneratedCodeFPlayerCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFPlayerCharacter_Right_Statics
+	{
+		struct FPlayerCharacter_eventRight_Parms
+		{
+			float value;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_value;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFPlayerCharacter_Right_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerCharacter_eventRight_Parms, value), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFPlayerCharacter_Right_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFPlayerCharacter_Right_Statics::NewProp_value,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFPlayerCharacter_Right_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FPlayerCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFPlayerCharacter_Right_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFPlayerCharacter, nullptr, "Right", nullptr, nullptr, sizeof(Z_Construct_UFunction_AFPlayerCharacter_Right_Statics::FPlayerCharacter_eventRight_Parms), Z_Construct_UFunction_AFPlayerCharacter_Right_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AFPlayerCharacter_Right_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFPlayerCharacter_Right_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AFPlayerCharacter_Right_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFPlayerCharacter_Right()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AFPlayerCharacter_Right_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AFPlayerCharacter);
 	UClass* Z_Construct_UClass_AFPlayerCharacter_NoRegister()
 	{
@@ -94,6 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeFPlayerCharacter() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFPlayerCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AFPlayerCharacter_MoveForward, "MoveForward" }, // 3345530886
+		{ &Z_Construct_UFunction_AFPlayerCharacter_Right, "Right" }, // 3678521059
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFPlayerCharacter_Statics::Class_MetaDataParams[] = {
@@ -158,9 +200,9 @@ void EmptyLinkFunctionForGeneratedCodeFPlayerCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FPlayerCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AFPlayerCharacter, AFPlayerCharacter::StaticClass, TEXT("AFPlayerCharacter"), &Z_Registration_Info_UClass_AFPlayerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPlayerCharacter), 298070271U) },
+		{ Z_Construct_UClass_AFPlayerCharacter, AFPlayerCharacter::StaticClass, TEXT("AFPlayerCharacter"), &Z_Registration_Info_UClass_AFPlayerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPlayerCharacter), 1028193719U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FPlayerCharacter_h_119311663(TEXT("/Script/FirstProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FPlayerCharacter_h_2922104628(TEXT("/Script/FirstProject"),
 		Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FPlayerCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FPlayerCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

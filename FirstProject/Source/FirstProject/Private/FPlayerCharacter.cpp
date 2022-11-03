@@ -3,6 +3,9 @@
 
 #include "FPlayerCharacter.h"
 
+#include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/KismetMathLibrary.h"
+
 // Sets default values
 AFPlayerCharacter::AFPlayerCharacter()
 {
@@ -14,6 +17,11 @@ AFPlayerCharacter::AFPlayerCharacter()
 
 	CameraComp = CreateDefaultSubobject<UCameraComponent>("CameraComp");
 	CameraComp->SetupAttachment(SpringArmComp);
+
+	SpringArmComp->bUsePawnControlRotation = true;
+	bUseControllerRotationYaw = false;
+
+	GetCharacterMovement()->bOrientRotationToMovement = true;
 
 }
 
@@ -33,7 +41,22 @@ void AFPlayerCharacter::Tick(float DeltaTime)
 
 void AFPlayerCharacter::MoveForward(float value)
 {
-	AddMovementInput(GetActorForwardVector(),value);
+	FRotator ControlRot = GetControlRotation();
+
+	ControlRot.Pitch = 0.0f;
+	ControlRot.Roll = 0.0f;
+	
+	AddMovementInput(UKismetMathLibrary::GetForwardVector(ControlRot),value);
+}
+
+void AFPlayerCharacter::Right(float value)
+{
+	FRotator ControlRot = GetControlRotation();
+
+	ControlRot.Pitch = 0.0f;
+	ControlRot.Roll = 0.0f;
+	
+	AddMovementInput(UKismetMathLibrary::GetRightVector(ControlRot),value);
 }
 
 // Called to bind functionality to input
@@ -42,5 +65,8 @@ void AFPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	InputComponent->BindAxis("MoveForward",this,&AFPlayerCharacter::MoveForward);
+	InputComponent->BindAxis("MoveRight",this,&AFPlayerCharacter::Right);
+	InputComponent->BindAxis("Turn",this,&APawn::AddControllerYawInput);
+	InputComponent->BindAxis("Up",this,&APawn::AddControllerPitchInput);
 }
 

@@ -16,11 +16,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_FirstProject_Source_FirstProject_Public_FPlayerCharacter_h_14_SPARSE_DATA
 #define FID_FirstProject_Source_FirstProject_Public_FPlayerCharacter_h_14_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execRight); \
 	DECLARE_FUNCTION(execMoveForward);
 
 
 #define FID_FirstProject_Source_FirstProject_Public_FPlayerCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execRight); \
 	DECLARE_FUNCTION(execMoveForward);
 
 
