@@ -22,6 +22,8 @@ AFPlayerCharacter::AFPlayerCharacter()
 	bUseControllerRotationYaw = false;
 
 	GetCharacterMovement()->bOrientRotationToMovement = true;
+		
+	WalkFastSpeed = 1000.0f;
 
 }
 
@@ -59,6 +61,27 @@ void AFPlayerCharacter::Right(float value)
 	AddMovementInput(UKismetMathLibrary::GetRightVector(ControlRot),value);
 }
 
+void AFPlayerCharacter::WalkFast()
+{
+	GetCharacterMovement()->MaxWalkSpeed = WalkFastSpeed;
+}
+
+void AFPlayerCharacter::WalkLow()
+{
+	GetCharacterMovement()->MaxWalkSpeed = 600.0f;
+}
+
+void AFPlayerCharacter::InCrouch()
+{
+	Crouch(true);
+}
+
+void AFPlayerCharacter::OutCrouch()
+{
+	UnCrouch(true);
+}
+
+
 // Called to bind functionality to input
 void AFPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
@@ -70,5 +93,11 @@ void AFPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	InputComponent->BindAxis("Up",this,&APawn::AddControllerPitchInput);
 
 	InputComponent->BindAction("Jump",IE_Pressed,this,&ACharacter::Jump);
+
+	InputComponent->BindAction("WalkFast",IE_Pressed,this,&AFPlayerCharacter::WalkFast);
+	InputComponent->BindAction("WalkLow",IE_Released,this,&AFPlayerCharacter::WalkLow);
+
+	InputComponent->BindAction("Crouch",IE_Pressed,this,&AFPlayerCharacter::InCrouch);
+	InputComponent->BindAction("UnCrouch",IE_Released,this,&AFPlayerCharacter::OutCrouch);	
 }
 

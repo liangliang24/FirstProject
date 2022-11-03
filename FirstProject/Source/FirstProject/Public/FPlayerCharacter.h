@@ -18,11 +18,28 @@ public:
 	AFPlayerCharacter();
 
 protected:
+	UPROPERTY(BlueprintReadOnly)
+	float WalkFastSpeed;
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	
-	
+	UFUNCTION()
+    void MoveForward(float value);
+
+    UFUNCTION()
+    void Right(float value);
+
+    UFUNCTION()
+    void WalkFast();
+
+    UFUNCTION()
+    void WalkLow();
+
+	UFUNCTION()
+	void InCrouch();
+
+	UFUNCTION()
+	void OutCrouch();
 	UPROPERTY(VisibleAnywhere)
 	UCameraComponent* CameraComp;
 
@@ -32,11 +49,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UFUNCTION()
-	void MoveForward(float value);
 
-	UFUNCTION()
-	void Right(float value);
+	
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
