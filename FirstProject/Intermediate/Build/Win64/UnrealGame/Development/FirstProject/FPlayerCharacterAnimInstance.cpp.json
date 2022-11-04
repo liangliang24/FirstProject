@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\ue\\firstproject\\firstproject\\source\\firstproject\\private\\fplayercharacteraniminstance.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\ue\\firstproject\\firstproject\\intermediate\\build\\win64\\firstproject\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\ue\\firstproject\\firstproject\\intermediate\\build\\win64\\unrealgame\\development\\firstproject\\definitions.firstproject.h",
+            "c:\\ue\\firstproject\\firstproject\\source\\firstproject\\public\\fplayercharacteraniminstance.h",
+            "c:\\ue\\firstproject\\firstproject\\intermediate\\build\\win64\\unrealgame\\inc\\firstproject\\fplayercharacteraniminstance.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
