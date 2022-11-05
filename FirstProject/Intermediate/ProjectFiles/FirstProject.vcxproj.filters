@@ -62,6 +62,9 @@
     <ClCompile Include="..\..\Source\FirstProject\Private\FPlayerCharacterAnimInstance.cpp">
       <Filter>Source\FirstProject\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\FirstProject\Private\Weapon.cpp">
+      <Filter>Source\FirstProject\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\FirstProject\Public">
       <UniqueIdentifier>{F1D20869-2890-3948-AC16-314B570195E6}</UniqueIdentifier>
     </Filter>
@@ -72,6 +75,9 @@
       <Filter>Source\FirstProject\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\FirstProject\Public\FPlayerCharacterAnimInstance.h">
+      <Filter>Source\FirstProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FirstProject\Public\Weapon.h">
       <Filter>Source\FirstProject\Public</Filter>
     </ClInclude>
   </ItemGroup>

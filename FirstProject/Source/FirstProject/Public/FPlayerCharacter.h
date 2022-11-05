@@ -48,6 +48,12 @@ protected:
 
 	UPROPERTY(VisibleAnywhere)
 	USpringArmComponent* SpringArmComp;
+
+	UPROPERTY(VisibleAnywhere)
+	USceneComponent* WeaponComp;
+
+	UPROPERTY(VisibleAnywhere)
+	UMeshComponent* Weapon;
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
