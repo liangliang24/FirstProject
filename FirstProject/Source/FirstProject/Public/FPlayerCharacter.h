@@ -17,9 +17,6 @@ public:
 	// Sets default values for this character's properties
 	AFPlayerCharacter();
 
-
-	
-
 protected:
 	UPROPERTY(BlueprintReadOnly)
 	float WalkFastSpeed;
@@ -43,17 +40,12 @@ protected:
 
 	UFUNCTION()
 	void OutCrouch();
+	
 	UPROPERTY(VisibleAnywhere)
 	UCameraComponent* CameraComp;
 
 	UPROPERTY(VisibleAnywhere)
 	USpringArmComponent* SpringArmComp;
-
-	UPROPERTY(VisibleAnywhere)
-	USceneComponent* WeaponComp;
-
-	UPROPERTY(VisibleAnywhere)
-	UMeshComponent* Weapon;
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

@@ -130,6 +130,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "6A558CF8A9A6A3A29139536F3663DB6BF50616F2",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_Tracer_A"
+			]
+		},
+		{
 			"ShaderMapHash": "4325A0A02FA0BF1818E8FAEEC012361B127CC961",
 			"Assets": [
 				"/Engine/BasicShapes/BasicShapeMaterial"
@@ -197,6 +203,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "1D36E5663530FF6A3A5FCBB640F8A1D70BD6BEF5",
+			"Assets": [
+				"/Paper2D/DefaultSpriteMaterial"
+			]
+		},
+		{
 			"ShaderMapHash": "EB29830576678FEC8056CF91F873E8C91167152D",
 			"Assets": [
 				"/Engine/EngineMaterials/PhAT_JointLimitMaterial"
@@ -206,12 +218,6 @@
 			"ShaderMapHash": "7B2824C3F3B1A7A5873A0804AF1769CF037D9F9E",
 			"Assets": [
 				"/ControlRig/M_Manip"
-			]
-		},
-		{
-			"ShaderMapHash": "1D36E5663530FF6A3A5FCBB640F8A1D70BD6BEF5",
-			"Assets": [
-				"/Paper2D/DefaultSpriteMaterial"
 			]
 		},
 		{
@@ -576,6 +582,99 @@
 			]
 		},
 		{
+			"ShaderMapHash": "457845F92965630CC422D826FE05A0EBD361C25B",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/Weapons/Materials/M_WeaponMaster_01"
+			]
+		},
+		{
+			"ShaderMapHash": "0156C551DD9F6C9E0E680A9CD8683CBAE819FC40",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_Woodchips_8x1_01"
+			]
+		},
+		{
+			"ShaderMapHash": "20C5F89AA0B4CDF76775A7F4A0A1EA8094D58148",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_SparksImpact_2x2_01",
+				"/Game/MilitaryWeapSilver/FX/Materials/M_RockSmall_01",
+				"/Game/MilitaryWeapSilver/FX/Materials/M_Pistol_MuzzleFlash_4x1_A"
+			]
+		},
+		{
+			"ShaderMapHash": "10EB10D3D8E04BCAECA83C1979627CA0A209D879",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_Smoke_8x8_B_01"
+			]
+		},
+		{
+			"ShaderMapHash": "E12716F7BFA3D41B3808D6F6B649C825EEC2CB66",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_SmokeSimple_01"
+			]
+		},
+		{
+			"ShaderMapHash": "DBE952F0BEC3F48237AE803EBFF0239C60BC149A",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_SmokeRibbon_01"
+			]
+		},
+		{
+			"ShaderMapHash": "8EC1AC0BB73597938045FAA6FBD09E95E888C389",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_Shockwave_Refraction_01"
+			]
+		},
+		{
+			"ShaderMapHash": "A21348A3B18E3144308074FAB1E533377A59A9E9",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_RockMesh_01"
+			]
+		},
+		{
+			"ShaderMapHash": "11E375D6FF76CA49F5A2A33783D2E1F68D9AE9E1",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_Pistol_Streaks_01",
+				"/Game/MilitaryWeapSilver/FX/Materials/M_AssaultRifle_MuzzleFlash_4x1"
+			]
+		},
+		{
+			"ShaderMapHash": "C57E8E95961C6B7AA92F189C2AE9C6E5CA3EF145",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_LightRay_01"
+			]
+		},
+		{
+			"ShaderMapHash": "AD382F435533BDA700C4ED34D302120C58B5FDF3",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_Knife_RibbonTrail_01"
+			]
+		},
+		{
+			"ShaderMapHash": "812CF5DC5A932A755DC9E24CE54FEE20C5CB01D0",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_Pistol_Smoke_2x2_A"
+			]
+		},
+		{
+			"ShaderMapHash": "CEF4EFB4F41358BA2E551DCE54EB1B29CC35D4F2",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_Explosion_8x8_A_01"
+			]
+		},
+		{
+			"ShaderMapHash": "5B9BD9B2457BAC3EE553FCAEB013948C89AF174E",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_Ember_Speed_01"
+			]
+		},
+		{
+			"ShaderMapHash": "0C8EB24557629B6A488F2A485A3F7BE6D4DA0E0D",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_Debris_Tileable_01"
+			]
+		},
+		{
 			"ShaderMapHash": "7A78CE14B4BD91F2C5B518C1C7B6C8DFF1A70157",
 			"Assets": [
 				"/Engine/EngineMaterials/PPM_DefaultCalibrationGrayscale"
@@ -695,6 +794,12 @@
 			"ShaderMapHash": "128C39CCF84FF4E417AA3CE8704EA82316ACCC7B",
 			"Assets": [
 				"/Game/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI"
+			]
+		},
+		{
+			"ShaderMapHash": "00A96BEF1F45E900E76CD101D3ADC887377C59C6",
+			"Assets": [
+				"/Game/MilitaryWeapSilver/FX/Materials/M_GlowSphere_01"
 			]
 		},
 		{

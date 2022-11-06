@@ -17,13 +17,6 @@ AFPlayerCharacter::AFPlayerCharacter()
 
 	CameraComp = CreateDefaultSubobject<UCameraComponent>("CameraComp");
 	CameraComp->SetupAttachment(SpringArmComp);
-
-	WeaponComp = CreateDefaultSubobject<USceneComponent>("Weapon");
-	WeaponComp->SetupAttachment(GetMesh());
-	WeaponComp->AttachToComponent(GetMesh(),FAttachmentTransformRules::KeepRelativeTransform,"Weapon");
-
-	Weapon = CreateDefaultSubobject<UMeshComponent>("Weapon");
-	Weapon->SetupAttachment(GetMesh());
 	
 	SpringArmComp->bUsePawnControlRotation = true;
 	bUseControllerRotationYaw = false;
