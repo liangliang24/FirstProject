@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeFPlayerCharacter() {}
 	UPackage* Z_Construct_UPackage__Script_FirstProject();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(AFPlayerCharacter::execOutCrouch)
 	{
@@ -249,6 +250,10 @@ void EmptyLinkFunctionForGeneratedCodeFPlayerCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_SpringArmComp_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_SpringArmComp;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_WeaponAttachComp_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_WeaponAttachComp;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -295,10 +300,19 @@ void EmptyLinkFunctionForGeneratedCodeFPlayerCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPlayerCharacter_Statics::NewProp_SpringArmComp = { "SpringArmComp", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFPlayerCharacter, SpringArmComp), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFPlayerCharacter_Statics::NewProp_SpringArmComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFPlayerCharacter_Statics::NewProp_SpringArmComp_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFPlayerCharacter_Statics::NewProp_WeaponAttachComp_MetaData[] = {
+		{ "Category", "FPlayerCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/FPlayerCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPlayerCharacter_Statics::NewProp_WeaponAttachComp = { "WeaponAttachComp", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFPlayerCharacter, WeaponAttachComp), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFPlayerCharacter_Statics::NewProp_WeaponAttachComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFPlayerCharacter_Statics::NewProp_WeaponAttachComp_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFPlayerCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPlayerCharacter_Statics::NewProp_WalkFastSpeed,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPlayerCharacter_Statics::NewProp_CameraComp,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPlayerCharacter_Statics::NewProp_SpringArmComp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPlayerCharacter_Statics::NewProp_WeaponAttachComp,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFPlayerCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFPlayerCharacter>::IsAbstract,
@@ -336,9 +350,9 @@ void EmptyLinkFunctionForGeneratedCodeFPlayerCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FPlayerCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AFPlayerCharacter, AFPlayerCharacter::StaticClass, TEXT("AFPlayerCharacter"), &Z_Registration_Info_UClass_AFPlayerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPlayerCharacter), 1235724724U) },
+		{ Z_Construct_UClass_AFPlayerCharacter, AFPlayerCharacter::StaticClass, TEXT("AFPlayerCharacter"), &Z_Registration_Info_UClass_AFPlayerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPlayerCharacter), 1775299795U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FPlayerCharacter_h_2467190460(TEXT("/Script/FirstProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FPlayerCharacter_h_3243574931(TEXT("/Script/FirstProject"),
 		Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FPlayerCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FPlayerCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

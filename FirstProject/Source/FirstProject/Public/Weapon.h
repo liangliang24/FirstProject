@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FPlayerCharacter.h"
 #include "Components/SphereComponent.h"
 #include "GameFramework/Actor.h"
 #include "Weapon.generated.h"
@@ -32,7 +33,7 @@ protected:
 	UFUNCTION()
 	virtual void BeginOverlap(UPrimitiveComponent* PrimitiveComponent, AActor* Actor, UPrimitiveComponent* PrimitiveComponent1, int I, bool bArg, const FHitResult& HitResult);
 
-	void Equip(ACharacter* Picker);
+	void Equip(AFPlayerCharacter* Picker);
 
 };
 

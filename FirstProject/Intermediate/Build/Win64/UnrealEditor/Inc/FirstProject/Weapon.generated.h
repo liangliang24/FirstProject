@@ -16,18 +16,18 @@ struct FHitResult;
 #endif
 #define FIRSTPROJECT_Weapon_generated_h
 
-#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_SPARSE_DATA
-#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_RPC_WRAPPERS \
+#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_SPARSE_DATA
+#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execBeginOverlap);
 
 
-#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execBeginOverlap);
 
 
-#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWeapon(); \
 	friend struct Z_Construct_UClass_AWeapon_Statics; \
@@ -36,7 +36,7 @@ public: \
 	DECLARE_SERIALIZER(AWeapon)
 
 
-#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_INCLASS \
+#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesAWeapon(); \
 	friend struct Z_Construct_UClass_AWeapon_Statics; \
@@ -45,7 +45,7 @@ public: \
 	DECLARE_SERIALIZER(AWeapon)
 
 
-#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_STANDARD_CONSTRUCTORS \
+#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AWeapon(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AWeapon) \
@@ -58,7 +58,7 @@ private: \
 public:
 
 
-#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AWeapon(AWeapon&&); \
@@ -69,25 +69,25 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AWeapon)
 
 
-#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_10_PROLOG
-#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_GENERATED_BODY_LEGACY \
+#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_11_PROLOG
+#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_SPARSE_DATA \
-	FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_RPC_WRAPPERS \
-	FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_INCLASS \
-	FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_STANDARD_CONSTRUCTORS \
+	FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_SPARSE_DATA \
+	FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_RPC_WRAPPERS \
+	FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_INCLASS \
+	FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_GENERATED_BODY \
+#define FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_SPARSE_DATA \
-	FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_INCLASS_NO_PURE_DECLS \
-	FID_FirstProject_Source_FirstProject_Public_Weapon_h_13_ENHANCED_CONSTRUCTORS \
+	FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_SPARSE_DATA \
+	FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_INCLASS_NO_PURE_DECLS \
+	FID_FirstProject_Source_FirstProject_Public_Weapon_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

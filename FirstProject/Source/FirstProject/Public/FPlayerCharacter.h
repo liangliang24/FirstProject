@@ -46,7 +46,12 @@ protected:
 
 	UPROPERTY(VisibleAnywhere)
 	USpringArmComponent* SpringArmComp;
-public:	
+
+	
+public:
+	USceneComponent* GetWeaponAttachComp() const;
+	UPROPERTY(VisibleAnywhere)
+	USceneComponent* WeaponAttachComp;
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -58,3 +63,5 @@ public:
 	
 
 };
+
+

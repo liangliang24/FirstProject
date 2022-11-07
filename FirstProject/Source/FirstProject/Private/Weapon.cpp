@@ -3,6 +3,7 @@
 
 #include "Weapon.h"
 
+#include "FPlayerCharacter.h"
 #include "GameFramework/Character.h"
 
 // Sets default values
@@ -34,7 +35,7 @@ void AWeapon::BeginOverlap(UPrimitiveComponent* PrimitiveComponent, AActor* Acto
 {
 	if (Actor)
 	{
-		ACharacter* Picker = Cast<ACharacter>(Actor);
+		AFPlayerCharacter* Picker = Cast<AFPlayerCharacter>(Actor);
 
 		if (Picker)
 		{
@@ -43,7 +44,7 @@ void AWeapon::BeginOverlap(UPrimitiveComponent* PrimitiveComponent, AActor* Acto
 	}
 }
 
-void AWeapon::Equip(ACharacter* Picker)
+void AWeapon::Equip(AFPlayerCharacter* Picker)
 {
 	if (Picker)
 	{
@@ -52,7 +53,8 @@ void AWeapon::Equip(ACharacter* Picker)
 
 		SphereComp->OnComponentBeginOverlap.RemoveDynamic(this,&AWeapon::BeginOverlap);
 
-		AttachToComponent(Picker->GetMesh(),FAttachmentTransformRules::SnapToTargetNotIncludingScale,"Weapon");
+
+		AttachToComponent(Picker->GetWeaponAttachComp(),FAttachmentTransformRules::SnapToTargetNotIncludingScale);
 	}
 }
 
