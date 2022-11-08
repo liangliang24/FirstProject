@@ -3,13 +3,14 @@
 
 #include "FPlayerCharacter.h"
 
+#include "FWeapon.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 
 // Sets default values
 AFPlayerCharacter::AFPlayerCharacter()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	SpringArmComp = CreateDefaultSubobject<USpringArmComponent>("SpringArmComp");
@@ -18,16 +19,13 @@ AFPlayerCharacter::AFPlayerCharacter()
 	CameraComp = CreateDefaultSubobject<UCameraComponent>("CameraComp");
 	CameraComp->SetupAttachment(SpringArmComp);
 
-	WeaponAttachComp = CreateDefaultSubobject<USceneComponent>("WeaponAttachComp");
-	WeaponAttachComp->AttachToComponent(GetMesh(),FAttachmentTransformRules::KeepRelativeTransform,"Weapon");
-	
+	//Weapon = CreateDefaultSubobject<AFWeapon>("Weapon");
 	SpringArmComp->bUsePawnControlRotation = true;
 	bUseControllerRotationYaw = false;
 
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 		
 	WalkFastSpeed = 1000.0f;
-
 }
 
 // Called when the game starts or when spawned
@@ -35,23 +33,6 @@ void AFPlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
-}
-
-// Called every frame
-void AFPlayerCharacter::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-
-	//USkeletalMesh* temp = Cast<USke>()WeaponAttachComp->GetAttachChildren()[0];
-	/*if ()
-	{
-		UE_LOG(LogTemp,Log,TEXT("Yes"));
-	}
-	else
-	{
-		UE_LOG(LogTemp,Log,TEXT("No"));
-	}*/
 }
 
 void AFPlayerCharacter::MoveForward(float value)
@@ -94,10 +75,7 @@ void AFPlayerCharacter::OutCrouch()
 	UnCrouch(true);
 }
 
-USceneComponent* AFPlayerCharacter::GetWeaponAttachComp() const
-{
-	return WeaponAttachComp;
-}
+
 
 // Called to bind functionality to input
 void AFPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

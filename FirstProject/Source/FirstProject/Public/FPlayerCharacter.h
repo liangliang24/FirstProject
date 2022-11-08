@@ -8,6 +8,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "FPlayerCharacter.generated.h"
 
+class AFWeapon;
 UCLASS()
 class FIRSTPROJECT_API AFPlayerCharacter : public ACharacter
 {
@@ -17,9 +18,12 @@ public:
 	// Sets default values for this character's properties
 	AFPlayerCharacter();
 
+	
 protected:
 	UPROPERTY(BlueprintReadOnly)
 	float WalkFastSpeed;
+
+	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
@@ -47,21 +51,13 @@ protected:
 	UPROPERTY(VisibleAnywhere)
 	USpringArmComponent* SpringArmComp;
 
-	
-public:
-	USceneComponent* GetWeaponAttachComp() const;
-	UPROPERTY(VisibleAnywhere)
-	USceneComponent* WeaponAttachComp;
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-
-	
+public:	
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	
-
+	UPROPERTY(EditAnywhere,Category="Attack")
+	AFWeapon* Weapon;
 };
 
 

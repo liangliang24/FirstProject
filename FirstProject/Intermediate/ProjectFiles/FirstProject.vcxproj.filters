@@ -53,6 +53,9 @@
     <Filter Include="Source\FirstProject\Private">
       <UniqueIdentifier>{C1A4608A-E62C-3C4C-846F-51FF4113FB97}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\FirstProject\Private\FBullet.cpp">
+      <Filter>Source\FirstProject\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\FirstProject\Private\FMyGameModeBase.cpp">
       <Filter>Source\FirstProject\Private</Filter>
     </ClCompile>
@@ -62,12 +65,15 @@
     <ClCompile Include="..\..\Source\FirstProject\Private\FPlayerCharacterAnimInstance.cpp">
       <Filter>Source\FirstProject\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\FirstProject\Private\Weapon.cpp">
+    <ClCompile Include="..\..\Source\FirstProject\Private\FWeapon.cpp">
       <Filter>Source\FirstProject\Private</Filter>
     </ClCompile>
     <Filter Include="Source\FirstProject\Public">
       <UniqueIdentifier>{F1D20869-2890-3948-AC16-314B570195E6}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\FirstProject\Public\FBullet.h">
+      <Filter>Source\FirstProject\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\FirstProject\Public\FMyGameModeBase.h">
       <Filter>Source\FirstProject\Public</Filter>
     </ClInclude>
@@ -77,7 +83,7 @@
     <ClInclude Include="..\..\Source\FirstProject\Public\FPlayerCharacterAnimInstance.h">
       <Filter>Source\FirstProject\Public</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\FirstProject\Public\Weapon.h">
+    <ClInclude Include="..\..\Source\FirstProject\Public\FWeapon.h">
       <Filter>Source\FirstProject\Public</Filter>
     </ClInclude>
   </ItemGroup>

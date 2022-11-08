@@ -6,17 +6,17 @@
 #include "FPlayerCharacter.h"
 #include "Components/SphereComponent.h"
 #include "GameFramework/Actor.h"
-#include "Weapon.generated.h"
+#include "FWeapon.generated.h"
 
 UCLASS()
-class FIRSTPROJECT_API AWeapon : public AActor
+class FIRSTPROJECT_API AFWeapon : public AActor
 {
 	GENERATED_BODY()
 	
 public:
 	
 	// Sets default values for this actor's properties
-	AWeapon();
+	AFWeapon();
 
 protected:
 	UPROPERTY(VisibleAnywhere)

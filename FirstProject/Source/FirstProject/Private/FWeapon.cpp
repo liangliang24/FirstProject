@@ -1,13 +1,13 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "Weapon.h"
+#include "FWeapon.h"
 
 #include "FPlayerCharacter.h"
 #include "GameFramework/Character.h"
 
 // Sets default values
-AWeapon::AWeapon()
+AFWeapon::AFWeapon()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -23,14 +23,14 @@ AWeapon::AWeapon()
 }
 
 
-void AWeapon::PostInitializeComponents()
+void AFWeapon::PostInitializeComponents()
 {
 	Super::PostInitializeComponents();
 	
-	SphereComp->OnComponentBeginOverlap.AddDynamic(this,&AWeapon::BeginOverlap);
+	SphereComp->OnComponentBeginOverlap.AddDynamic(this,&AFWeapon::BeginOverlap);
 }
 
-void AWeapon::BeginOverlap(UPrimitiveComponent* PrimitiveComponent, AActor* Actor,
+void AFWeapon::BeginOverlap(UPrimitiveComponent* PrimitiveComponent, AActor* Actor,
                            UPrimitiveComponent* PrimitiveComponent1, int I, bool bArg, const FHitResult& HitResult)
 {
 	if (Actor)
@@ -39,22 +39,24 @@ void AWeapon::BeginOverlap(UPrimitiveComponent* PrimitiveComponent, AActor* Acto
 
 		if (Picker)
 		{
-			Equip(Picker);
+			 Equip(Picker);
 		}
 	}
 }
 
-void AWeapon::Equip(AFPlayerCharacter* Picker)
+void AFWeapon::Equip(AFPlayerCharacter* Picker)
 {
 	if (Picker)
 	{
 		StaticMesh->SetCollisionResponseToAllChannels(ECR_Ignore);
 		StaticMesh->SetSimulatePhysics(false);
 
-		SphereComp->OnComponentBeginOverlap.RemoveDynamic(this,&AWeapon::BeginOverlap);
+		SphereComp->OnComponentBeginOverlap.RemoveDynamic(this,&AFWeapon::BeginOverlap);
 
 
-		AttachToComponent(Picker->GetWeaponAttachComp(),FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+		AttachToComponent(Picker->GetMesh(),FAttachmentTransformRules::SnapToTargetNotIncludingScale,"Weapon");
+
+		Picker->Weapon = this;
 	}
 }
 
