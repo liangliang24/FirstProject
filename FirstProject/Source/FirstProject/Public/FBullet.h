@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/SphereComponent.h"
 #include "GameFramework/Actor.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 #include "FBullet.generated.h"
 
 UCLASS()
@@ -25,6 +26,9 @@ protected:
 
 	UPROPERTY(VisibleAnywhere)
 	USphereComponent* SphereComp;
+
+	UPROPERTY(VisibleAnywhere)
+	UProjectileMovementComponent* MovementComp;
 
 public:	
 	// Called every frame

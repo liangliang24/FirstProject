@@ -12,11 +12,19 @@ AFBullet::AFBullet()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	ParticleComp = CreateDefaultSubobject<UParticleSystemComponent>("ParticleComp");
-	ParticleComp->SetupAttachment(RootComponent);
-
 	SphereComp = CreateDefaultSubobject<USphereComponent>("SphereComp");
-	SphereComp->SetupAttachment(ParticleComp);
+	RootComponent = SphereComp;
+	
+	ParticleComp = CreateDefaultSubobject<UParticleSystemComponent>("ParticleComp");
+	ParticleComp->SetupAttachment(SphereComp);
+	
+	MovementComp = CreateDefaultSubobject<UProjectileMovementComponent>("MovementComp");
+
+	SphereComp->SetEnableGravity(false);
+	MovementComp->InitialSpeed = 5000.0f;
+
+	MovementComp->bRotationFollowsVelocity = true;
+	MovementComp->bInitialVelocityInLocalSpace = true;
 }
 
 // Called when the game starts or when spawned
