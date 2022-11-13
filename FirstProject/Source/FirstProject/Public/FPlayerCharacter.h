@@ -47,17 +47,25 @@ protected:
 	
 	UPROPERTY(VisibleAnywhere)
 	UCameraComponent* CameraComp;
-
+public:
+	
+protected:
 	UPROPERTY(VisibleAnywhere)
 	USpringArmComponent* SpringArmComp;
 
-public:	
+
+	void Fire();
+	void UnFire();
+public:
+	
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	
 	UPROPERTY(EditAnywhere,Category="Attack")
 	AFWeapon* Weapon;
+
+	UCameraComponent* GetCamera() const;
 };
 
 

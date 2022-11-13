@@ -75,7 +75,29 @@ void AFPlayerCharacter::OutCrouch()
 	UnCrouch(true);
 }
 
+UCameraComponent* AFPlayerCharacter::GetCamera() const
+{
+	return CameraComp;
+}
 
+
+void AFPlayerCharacter::Fire()
+{
+	if(Weapon)
+	{
+		Weapon->SetIsFire(true);
+		Weapon->Fire();
+	}
+	
+}
+
+void AFPlayerCharacter::UnFire()
+{
+	if(Weapon)
+	{
+		Weapon->SetIsFire(false);
+	}
+}
 
 // Called to bind functionality to input
 void AFPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -93,6 +115,9 @@ void AFPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	InputComponent->BindAction("WalkLow",IE_Released,this,&AFPlayerCharacter::WalkLow);
 
 	InputComponent->BindAction("Crouch",IE_Pressed,this,&AFPlayerCharacter::InCrouch);
-	InputComponent->BindAction("UnCrouch",IE_Released,this,&AFPlayerCharacter::OutCrouch);	
+	InputComponent->BindAction("UnCrouch",IE_Released,this,&AFPlayerCharacter::OutCrouch);
+
+	InputComponent->BindAction("Fire",IE_Pressed,this,&AFPlayerCharacter::Fire);
+	InputComponent->BindAction("UnFire", IE_Released, this, &AFPlayerCharacter::UnFire);
 }
 

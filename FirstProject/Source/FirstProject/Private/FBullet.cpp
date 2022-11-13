@@ -3,6 +3,7 @@
 
 #include "FBullet.h"
 
+#include "Kismet/GameplayStatics.h"
 #include "Particles/ParticleSystem.h"
 #include "Particles/ParticleSystemComponent.h"
 
@@ -14,7 +15,8 @@ AFBullet::AFBullet()
 
 	SphereComp = CreateDefaultSubobject<USphereComponent>("SphereComp");
 	RootComponent = SphereComp;
-	
+	SphereComp->OnComponentBeginOverlap.AddDynamic(this,&AFBullet::OnBeginOverlap);
+	SphereComp->OnComponentHit.AddDynamic(this,&AFBullet::OnHit);
 	ParticleComp = CreateDefaultSubobject<UParticleSystemComponent>("ParticleComp");
 	ParticleComp->SetupAttachment(SphereComp);
 	
@@ -34,6 +36,19 @@ void AFBullet::BeginPlay()
 	
 }
 
+void AFBullet::OnBeginOverlap(UPrimitiveComponent* PrimitiveComponent, AActor* Actor,
+	UPrimitiveComponent* PrimitiveComponent1, int I, bool bArg, const FHitResult& HitResult)
+{
+	UGameplayStatics::SpawnEmitterAtLocation(this,ExploedParticle,HitResult.Location);
+	Destroy();
+}
+
+void AFBullet::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp,
+	FVector NormalImpulse, const FHitResult& Hit)
+{
+	UGameplayStatics::SpawnEmitterAtLocation(this,ExploedParticle,Hit.Location);
+	Destroy();
+}
 // Called every frame
 void AFBullet::Tick(float DeltaTime)
 {

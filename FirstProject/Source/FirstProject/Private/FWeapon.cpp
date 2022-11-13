@@ -5,6 +5,7 @@
 
 #include "FPlayerCharacter.h"
 #include "GameFramework/Character.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AFWeapon::AFWeapon()
@@ -20,6 +21,8 @@ AFWeapon::AFWeapon()
 
 	SphereComp = CreateDefaultSubobject<USphereComponent>("SphereComp");
 	SphereComp->SetupAttachment(StaticMesh);
+
+	IsFire = false;
 }
 
 
@@ -44,6 +47,46 @@ void AFWeapon::BeginOverlap(UPrimitiveComponent* PrimitiveComponent, AActor* Act
 	}
 }
 
+void AFWeapon::Fire()
+{
+	
+		if (Bullet&&OwnerPawn)
+		{
+		
+			
+			FVector Start,End;
+			FRotator EyeRotation = OwnerPawn->GetControlRotation();
+
+			Start = OwnerPawn->GetCamera()->GetComponentLocation();
+			End = Start+5000.0f*EyeRotation.Vector();
+			FHitResult Hit;
+			FCollisionObjectQueryParams ObjectQueryParams;
+			if(GetWorld()->LineTraceSingleByObjectType(Hit,Start,End,ObjectQueryParams))
+			{
+				End = Hit.ImpactPoint;
+			}
+			FVector FireLocation = Weapon->GetSocketLocation("MuzzleFlash");
+			FTransform SpawnTM = FTransform((End-FireLocation).Rotation(),FireLocation);
+
+			FActorSpawnParameters SpawnParams;
+			SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+
+			UGameplayStatics::SpawnEmitterAtLocation(this,FireParticle,FireLocation,EyeRotation);
+			
+			GetWorld()->SpawnActor<AFBullet>(Bullet,SpawnTM,SpawnParams);
+			EyeRotation.Pitch = 0;
+			EyeRotation.Roll = 0;
+			
+			OwnerPawn->SetActorRotation(EyeRotation);
+		}
+	
+}
+
+void AFWeapon::SetIsFire(bool bIsfire)
+{
+	IsFire = bIsfire;
+}
+
 void AFWeapon::Equip(AFPlayerCharacter* Picker)
 {
 	if (Picker)
@@ -57,6 +100,8 @@ void AFWeapon::Equip(AFPlayerCharacter* Picker)
 		AttachToComponent(Picker->GetMesh(),FAttachmentTransformRules::SnapToTargetNotIncludingScale,"Weapon");
 
 		Picker->Weapon = this;
+
+		OwnerPawn = Picker;
 	}
 }
 

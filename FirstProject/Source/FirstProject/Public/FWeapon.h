@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FBullet.h"
 #include "FPlayerCharacter.h"
 #include "Components/SphereComponent.h"
 #include "GameFramework/Actor.h"
@@ -28,12 +29,30 @@ protected:
 	UPROPERTY(VisibleAnywhere)
 	USphereComponent* SphereComp;
 
+	UPROPERTY(EditDefaultsOnly,Category="Attack")
+	TSubclassOf<AFBullet> Bullet;
+
+	UPROPERTY()
+	AFPlayerCharacter* OwnerPawn;
+
+	UPROPERTY(EditDefaultsOnly,Category="Attack");
+	UParticleSystem* FireParticle;
+
 	virtual void PostInitializeComponents() override;
 
 	UFUNCTION()
 	virtual void BeginOverlap(UPrimitiveComponent* PrimitiveComponent, AActor* Actor, UPrimitiveComponent* PrimitiveComponent1, int I, bool bArg, const FHitResult& HitResult);
 
+	bool IsFire;
+protected:
 	void Equip(AFPlayerCharacter* Picker);
+
+public:
+
+	void SetIsFire(bool bIsfire);
+
+	
+	void Fire();
 
 };
 

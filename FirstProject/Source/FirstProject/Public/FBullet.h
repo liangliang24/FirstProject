@@ -13,7 +13,8 @@ class FIRSTPROJECT_API AFBullet : public AActor
 {
 	GENERATED_BODY()
 	
-public:	
+public:
+	
 	// Sets default values for this actor's properties
 	AFBullet();
 
@@ -30,8 +31,20 @@ protected:
 	UPROPERTY(VisibleAnywhere)
 	UProjectileMovementComponent* MovementComp;
 
+	UPROPERTY(EditDefaultsOnly,Category="Attack")
+	UParticleSystem* ExploedParticle;
+
+
+	UFUNCTION()
+	void OnBeginOverlap(UPrimitiveComponent* PrimitiveComponent, AActor* Actor,
+	                    UPrimitiveComponent* PrimitiveComponent1, int I, bool bArg, const FHitResult& HitResult);
+
+	UFUNCTION()
+	void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 };
+
+
