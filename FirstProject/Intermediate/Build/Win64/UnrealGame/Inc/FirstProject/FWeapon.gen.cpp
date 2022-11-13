@@ -222,7 +222,7 @@ void EmptyLinkFunctionForGeneratedCodeFWeapon() {}
 		{ "ModuleRelativePath", "Public/FWeapon.h" },
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFWeapon_Statics::NewProp_FireParticle = { "FireParticle", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFWeapon, FireParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFWeapon_Statics::NewProp_FireParticle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFWeapon_Statics::NewProp_FireParticle_MetaData)) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFWeapon_Statics::NewProp_FireParticle = { "FireParticle", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFWeapon, FireParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFWeapon_Statics::NewProp_FireParticle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFWeapon_Statics::NewProp_FireParticle_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFWeapon_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFWeapon_Statics::NewProp_StaticMesh,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFWeapon_Statics::NewProp_Weapon,
@@ -267,9 +267,9 @@ void EmptyLinkFunctionForGeneratedCodeFWeapon() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FWeapon_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AFWeapon, AFWeapon::StaticClass, TEXT("AFWeapon"), &Z_Registration_Info_UClass_AFWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFWeapon), 1442211092U) },
+		{ Z_Construct_UClass_AFWeapon, AFWeapon::StaticClass, TEXT("AFWeapon"), &Z_Registration_Info_UClass_AFWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFWeapon), 3260741149U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FWeapon_h_1274583270(TEXT("/Script/FirstProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FWeapon_h_3085955043(TEXT("/Script/FirstProject"),
 		Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FWeapon_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_FirstProject_Source_FirstProject_Public_FWeapon_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

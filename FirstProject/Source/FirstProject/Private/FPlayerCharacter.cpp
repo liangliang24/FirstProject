@@ -85,8 +85,7 @@ void AFPlayerCharacter::Fire()
 {
 	if(Weapon)
 	{
-		Weapon->SetIsFire(true);
-		Weapon->Fire();
+		Weapon->StartFire();
 	}
 	
 }
@@ -95,7 +94,7 @@ void AFPlayerCharacter::UnFire()
 {
 	if(Weapon)
 	{
-		Weapon->SetIsFire(false);
+		Weapon->StopFire();
 	}
 }
 

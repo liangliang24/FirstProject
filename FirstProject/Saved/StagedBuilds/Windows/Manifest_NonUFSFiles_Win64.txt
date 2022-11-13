@@ -1,6 +1,6 @@
 FirstProject/Binaries/Win64/D3D12/D3D12Core.dll	2022-08-07T04:42:26.728Z
 FirstProject/Binaries/Win64/D3D12/d3d12SDKLayers.dll	2022-08-07T04:42:26.821Z
-FirstProject/Binaries/Win64/FirstProject.exe	2022-11-13T03:18:58.432Z
+FirstProject/Binaries/Win64/FirstProject.exe	2022-11-13T03:38:18.194Z
 FirstProject/Binaries/Win64/OpenImageDenoise.dll	2022-08-07T05:11:48.643Z
 FirstProject/Binaries/Win64/tbb.dll	2022-08-07T04:41:49.155Z
 FirstProject/Binaries/Win64/tbb12.dll	2022-08-07T05:11:46.075Z
@@ -18,4 +18,4 @@ Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll	2022-08-07T04:42
 Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll	2022-08-07T04:42:26.343Z
 Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64/WinPixEventRuntime.dll	2022-08-07T04:42:26.832Z
 Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll	2022-08-07T04:42:27.507Z
-FirstProject.exe	2022-11-13T03:19:38.576Z
+FirstProject.exe	2022-11-13T03:38:56.561Z

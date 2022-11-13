@@ -34,8 +34,10 @@ protected:
 
 	UPROPERTY()
 	AFPlayerCharacter* OwnerPawn;
+	
+	FTimerHandle TimerHandle_Fire;
 
-	UPROPERTY(EditDefaultsOnly,Category="Attack");
+	UPROPERTY(EditAnywhere,Category="Attack");
 	UParticleSystem* FireParticle;
 
 	virtual void PostInitializeComponents() override;
@@ -43,17 +45,14 @@ protected:
 	UFUNCTION()
 	virtual void BeginOverlap(UPrimitiveComponent* PrimitiveComponent, AActor* Actor, UPrimitiveComponent* PrimitiveComponent1, int I, bool bArg, const FHitResult& HitResult);
 
-	bool IsFire;
-protected:
+	void Fire();
+
 	void Equip(AFPlayerCharacter* Picker);
 
 public:
-
-	void SetIsFire(bool bIsfire);
-
 	
-	void Fire();
-
+	void StartFire();
+	void StopFire();
 };
 
 

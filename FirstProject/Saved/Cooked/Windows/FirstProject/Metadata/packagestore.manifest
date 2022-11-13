@@ -37,6 +37,10 @@
 			"ChunkId": "f0a7f83421ac425b00000001"
 		},
 		{
+			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.uasset",
+			"ChunkId": "5f510b7cd6e0bdc800000001"
+		},
+		{
 			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboard.uasset",
 			"ChunkId": "8fcb1cae0c92026900000001"
 		},
@@ -75,10 +79,6 @@
 		{
 			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uasset",
 			"ChunkId": "8d4486caf50605b200000001"
-		},
-		{
-			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.uasset",
-			"ChunkId": "5f510b7cd6e0bdc800000001"
 		},
 		{
 			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset.uasset",
@@ -237,6 +237,10 @@
 			"ChunkId": "8500a33b2fedbab800000001"
 		},
 		{
+			"Path": "Engine/Content/EngineDebugMaterials/VolumeToRender.uasset",
+			"ChunkId": "7f8259be57e87dce00000001"
+		},
+		{
 			"Path": "Engine/Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/EmptyNormal.uasset",
 			"ChunkId": "6f3a7c0fe1cf64ce00000001"
 		},
@@ -249,16 +253,16 @@
 			"ChunkId": "27d3dbbd9cb5875a00000002"
 		},
 		{
-			"Path": "Engine/Content/EngineDebugMaterials/VolumeToRender.uasset",
-			"ChunkId": "7f8259be57e87dce00000001"
-		},
-		{
 			"Path": "Engine/Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset",
 			"ChunkId": "2cc5808063f890db00000001"
 		},
 		{
 			"Path": "Engine/Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.ubulk",
 			"ChunkId": "2cc5808063f890db00000002"
+		},
+		{
+			"Path": "Engine/Plugins/Runtime/HairStrands/Content/Materials/HairGroupColors.uasset",
+			"ChunkId": "55c5d73fec0135d200000001"
 		},
 		{
 			"Path": "Engine/Content/EditorLandscapeResources/DataLayer.uasset",
@@ -303,34 +307,6 @@
 		{
 			"Path": "Engine/Content/VREditor/TransformGizmo/Main.uasset",
 			"ChunkId": "36f9c4a1a41147a000000001"
-		},
-		{
-			"Path": "Engine/Plugins/Runtime/HairStrands/Content/Materials/HairGroupColors.uasset",
-			"ChunkId": "55c5d73fec0135d200000001"
-		},
-		{
-			"Path": "Engine/Content/EngineMaterials/HairDebugColor.uasset",
-			"ChunkId": "8efe6173efa8192200000001"
-		},
-		{
-			"Path": "Engine/Content/EngineMaterials/HairColorMap.uasset",
-			"ChunkId": "2c913f2705b478d900000001"
-		},
-		{
-			"Path": "Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_OOD.uasset",
-			"ChunkId": "0bf1d6a9c47f8ccc00000001"
-		},
-		{
-			"Path": "Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_OOD.ubulk",
-			"ChunkId": "0bf1d6a9c47f8ccc00000002"
-		},
-		{
-			"Path": "Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.uasset",
-			"ChunkId": "ba6543c81e92e56d00000001"
-		},
-		{
-			"Path": "Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.ubulk",
-			"ChunkId": "ba6543c81e92e56d00000002"
 		},
 		{
 			"Path": "Engine/Content/VREditor/TransformGizmo/TranslucentTransformGizmoMaterial.uasset",
@@ -383,6 +359,30 @@
 		{
 			"Path": "Engine/Content/EditorResources/S_TriggerBox.uasset",
 			"ChunkId": "8953c1244c740aad00000001"
+		},
+		{
+			"Path": "Engine/Content/EngineMaterials/HairDebugColor.uasset",
+			"ChunkId": "8efe6173efa8192200000001"
+		},
+		{
+			"Path": "Engine/Content/EngineMaterials/HairColorMap.uasset",
+			"ChunkId": "2c913f2705b478d900000001"
+		},
+		{
+			"Path": "Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_OOD.uasset",
+			"ChunkId": "0bf1d6a9c47f8ccc00000001"
+		},
+		{
+			"Path": "Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_OOD.ubulk",
+			"ChunkId": "0bf1d6a9c47f8ccc00000002"
+		},
+		{
+			"Path": "Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.uasset",
+			"ChunkId": "ba6543c81e92e56d00000001"
+		},
+		{
+			"Path": "Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.ubulk",
+			"ChunkId": "ba6543c81e92e56d00000002"
 		},
 		{
 			"Path": "Engine/Content/VREditor/LaserPointer/VR_LaserPower_01.uasset",
@@ -449,12 +449,12 @@
 			"ChunkId": "24d7c88768eb5b3800000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_TableRound_N.uasset",
-			"ChunkId": "16fc57dc582896c800000001"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset",
+			"ChunkId": "61f98d7ba9495ba700000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_TableRound_N.ubulk",
-			"ChunkId": "16fc57dc582896c800000002"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.ubulk",
+			"ChunkId": "61f98d7ba9495ba700000002"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Textures/T_Tech_Panel_M.uasset",
@@ -693,12 +693,12 @@
 			"ChunkId": "20b9418b88b0cd3600000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset",
-			"ChunkId": "61f98d7ba9495ba700000001"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset",
+			"ChunkId": "9b6d7640124d50bf00000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.ubulk",
-			"ChunkId": "61f98d7ba9495ba700000002"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Rock_Sandstone_N.ubulk",
+			"ChunkId": "9b6d7640124d50bf00000002"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Textures/T_Tech_Dot_N.uasset",
@@ -717,12 +717,12 @@
 			"ChunkId": "9d535a937334adf200000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset",
-			"ChunkId": "9d1db76b8ca10b3700000001"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_TableRound_N.uasset",
+			"ChunkId": "16fc57dc582896c800000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Rock_Basalt_N.ubulk",
-			"ChunkId": "9d1db76b8ca10b3700000002"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_TableRound_N.ubulk",
+			"ChunkId": "16fc57dc582896c800000002"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Textures/T_TableRound_M.uasset",
@@ -821,12 +821,16 @@
 			"ChunkId": "2a3007c7f1aa7e2c00000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset",
-			"ChunkId": "9b6d7640124d50bf00000001"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Lamp_M.uasset",
+			"ChunkId": "3b1fc13e32aa21d500000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Rock_Sandstone_N.ubulk",
-			"ChunkId": "9b6d7640124d50bf00000002"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Lamp_M.ubulk",
+			"ChunkId": "3b1fc13e32aa21d500000002"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Textures/T_MacroVariation.uasset",
+			"ChunkId": "77f02809295ce51e00000001"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset",
@@ -845,12 +849,12 @@
 			"ChunkId": "49698fcf822c622d00000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Ground_Moss_N.uasset",
-			"ChunkId": "c64cb0e5d2faa85b00000001"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset",
+			"ChunkId": "9d1db76b8ca10b3700000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Ground_Moss_N.ubulk",
-			"ChunkId": "c64cb0e5d2faa85b00000002"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Rock_Basalt_N.ubulk",
+			"ChunkId": "9d1db76b8ca10b3700000002"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset",
@@ -949,10 +953,6 @@
 			"ChunkId": "9ee0b532c5a55a7c00000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_MacroVariation.uasset",
-			"ChunkId": "77f02809295ce51e00000001"
-		},
-		{
 			"Path": "FirstProject/Content/StarterContent/Textures/T_Lamp_N.uasset",
 			"ChunkId": "78c3ce2fe867747900000001"
 		},
@@ -961,28 +961,20 @@
 			"ChunkId": "78c3ce2fe867747900000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Lamp_M.uasset",
-			"ChunkId": "3b1fc13e32aa21d500000001"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset",
+			"ChunkId": "50e6ea19a1c52db400000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Lamp_M.ubulk",
-			"ChunkId": "3b1fc13e32aa21d500000002"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Detail_Rocky_N.ubulk",
+			"ChunkId": "50e6ea19a1c52db400000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset",
-			"ChunkId": "d0d34ddac239b25c00000001"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Ground_Moss_N.uasset",
+			"ChunkId": "c64cb0e5d2faa85b00000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Concrete_Tiles_M.ubulk",
-			"ChunkId": "d0d34ddac239b25c00000002"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset",
-			"ChunkId": "99bc8ef75040263800000001"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.ubulk",
-			"ChunkId": "99bc8ef75040263800000002"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Ground_Moss_N.ubulk",
+			"ChunkId": "c64cb0e5d2faa85b00000002"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Textures/T_ground_Moss_D.uasset",
@@ -1097,12 +1089,28 @@
 			"ChunkId": "c2b761258b27eed600000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset",
-			"ChunkId": "50e6ea19a1c52db400000001"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset",
+			"ChunkId": "d28643baccdb52bf00000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Detail_Rocky_N.ubulk",
-			"ChunkId": "50e6ea19a1c52db400000002"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.ubulk",
+			"ChunkId": "d28643baccdb52bf00000002"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset",
+			"ChunkId": "1c8888dc8bfb3fa600000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.ubulk",
+			"ChunkId": "1c8888dc8bfb3fa600000002"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset",
+			"ChunkId": "99bc8ef75040263800000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.ubulk",
+			"ChunkId": "99bc8ef75040263800000002"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset",
@@ -1113,12 +1121,12 @@
 			"ChunkId": "3f106e72d9cc7a0800000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Chair_N.uasset",
-			"ChunkId": "dbc70f7b2dd6e3b600000001"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset",
+			"ChunkId": "d0d34ddac239b25c00000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Chair_N.ubulk",
-			"ChunkId": "dbc70f7b2dd6e3b600000002"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Concrete_Tiles_M.ubulk",
+			"ChunkId": "d0d34ddac239b25c00000002"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset",
@@ -1217,20 +1225,20 @@
 			"ChunkId": "ba7023edf2f492be00000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset",
-			"ChunkId": "1c8888dc8bfb3fa600000001"
+			"Path": "FirstProject/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset",
+			"ChunkId": "e57ce1554d16db3d00000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.ubulk",
-			"ChunkId": "1c8888dc8bfb3fa600000002"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset",
+			"ChunkId": "20672ddc85d532db00000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset",
-			"ChunkId": "d28643baccdb52bf00000001"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.ubulk",
+			"ChunkId": "20672ddc85d532db00000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.ubulk",
-			"ChunkId": "d28643baccdb52bf00000002"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset",
+			"ChunkId": "71514267bea5cf6b00000001"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Textures/T_Checker_Noise_M.uasset",
@@ -1241,20 +1249,12 @@
 			"ChunkId": "963c51f2f21cb94c00000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset",
-			"ChunkId": "d8ce1ee62eb6262200000001"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Chair_N.uasset",
+			"ChunkId": "dbc70f7b2dd6e3b600000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.ubulk",
-			"ChunkId": "d8ce1ee62eb6262200000002"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset",
-			"ChunkId": "541a4352fded14dd00000001"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_New_D.ubulk",
-			"ChunkId": "541a4352fded14dd00000002"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Chair_N.ubulk",
+			"ChunkId": "dbc70f7b2dd6e3b600000002"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Textures/T_Chair_M.uasset",
@@ -1361,16 +1361,24 @@
 			"ChunkId": "cb1a17a3e81658c600000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset",
-			"ChunkId": "71514267bea5cf6b00000001"
-		},
-		{
 			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset",
 			"ChunkId": "c6ef2149fd62ed8a00000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset",
-			"ChunkId": "e57ce1554d16db3d00000001"
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset",
+			"ChunkId": "541a4352fded14dd00000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_New_D.ubulk",
+			"ChunkId": "541a4352fded14dd00000002"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset",
+			"ChunkId": "d8ce1ee62eb6262200000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.ubulk",
+			"ChunkId": "d8ce1ee62eb6262200000002"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset",
@@ -1409,12 +1417,16 @@
 			"ChunkId": "4a8a0e2ceb5accc400000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset",
-			"ChunkId": "20672ddc85d532db00000001"
+			"Path": "FirstProject/Content/StarterContent/Audio/Steam01_Cue.uasset",
+			"ChunkId": "53755d8e9a90b23f00000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.ubulk",
-			"ChunkId": "20672ddc85d532db00000002"
+			"Path": "FirstProject/Content/StarterContent/Audio/Steam01.uasset",
+			"ChunkId": "18abf760a31842ef00000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Audio/Steam01.ubulk",
+			"ChunkId": "18abf760a31842ef00000002"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset",
@@ -1423,50 +1435,6 @@
 		{
 			"Path": "FirstProject/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.ubulk",
 			"ChunkId": "dd10893a6540f26f00000002"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Steam01_Cue.uasset",
-			"ChunkId": "53755d8e9a90b23f00000001"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Starter_Music_Cue.uasset",
-			"ChunkId": "39efa2bc42383f0600000001"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Starter_Background_Cue.uasset",
-			"ChunkId": "e49875b5d36a007600000001"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Smoke01_Cue.uasset",
-			"ChunkId": "6e61777f8414e25400000001"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Light02_Cue.uasset",
-			"ChunkId": "9fa0b5af023ce98000000001"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Light01_Cue.uasset",
-			"ChunkId": "d206cf0052f2a01f00000001"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset",
-			"ChunkId": "3e4bb06fb511317800000001"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Light01.uasset",
-			"ChunkId": "be9e1601522db45200000001"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Light01.ubulk",
-			"ChunkId": "be9e1601522db45200000002"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Fire_Sparks01.uasset",
-			"ChunkId": "3bdc69df9fa9761500000001"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Fire_Sparks01.ubulk",
-			"ChunkId": "3bdc69df9fa9761500000002"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Maps/StarterMap_BuiltData.uasset",
@@ -1493,16 +1461,72 @@
 			"ChunkId": "30f95388a2288fc700000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
-			"ChunkId": "cf8509b15112d85600000001"
+			"Path": "FirstProject/Content/StarterContent/Audio/Starter_Music_Cue.uasset",
+			"ChunkId": "39efa2bc42383f0600000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Steam01.uasset",
-			"ChunkId": "18abf760a31842ef00000001"
+			"Path": "FirstProject/Content/StarterContent/Audio/Starter_Background_Cue.uasset",
+			"ChunkId": "e49875b5d36a007600000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Steam01.ubulk",
-			"ChunkId": "18abf760a31842ef00000002"
+			"Path": "FirstProject/Content/StarterContent/Audio/Smoke01_Cue.uasset",
+			"ChunkId": "6e61777f8414e25400000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Audio/Light02_Cue.uasset",
+			"ChunkId": "9fa0b5af023ce98000000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Audio/Light01_Cue.uasset",
+			"ChunkId": "d206cf0052f2a01f00000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset",
+			"ChunkId": "3e4bb06fb511317800000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Audio/Fire01_Cue.uasset",
+			"ChunkId": "1b6e8f75fd73148300000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Audio/Explosion_Cue.uasset",
+			"ChunkId": "583ba67573fad24200000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Audio/Collapse_Cue.uasset",
+			"ChunkId": "98aed1bd86ad544d00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Animations/Sniper_Rifle_A_Skeleton.uasset",
+			"ChunkId": "56ed13974586ea7100000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Animations/Shotgun_A_Skeleton.uasset",
+			"ChunkId": "a004c803cd00b5b200000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Animations/Rocket_Launcher_A_Skeleton.uasset",
+			"ChunkId": "03d782705c2f1dd600000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Animations/Pistols_A_Skeleton.uasset",
+			"ChunkId": "8e4ea5438312838900000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Animations/Knife_A_Skeleton.uasset",
+			"ChunkId": "0d6f06319d3352df00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Animations/Grenade_Launcher_A_Skeleton.uasset",
+			"ChunkId": "81d9454a3f6ee83c00000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Audio/Fire01.uasset",
+			"ChunkId": "d43cdff46bfd578200000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Audio/Fire01.ubulk",
+			"ChunkId": "d43cdff46bfd578200000002"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Audio/Starter_Wind06.uasset",
@@ -1511,6 +1535,10 @@
 		{
 			"Path": "FirstProject/Content/StarterContent/Audio/Starter_Wind06.ubulk",
 			"ChunkId": "e7c1f614cc33289800000002"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+			"ChunkId": "cf8509b15112d85600000001"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Audio/Starter_Wind05.uasset",
@@ -1553,76 +1581,20 @@
 			"ChunkId": "a54bf90871dd87dd00000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Fire01_Cue.uasset",
-			"ChunkId": "1b6e8f75fd73148300000001"
+			"Path": "FirstProject/Content/StarterContent/Audio/Light01.uasset",
+			"ChunkId": "be9e1601522db45200000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Explosion_Cue.uasset",
-			"ChunkId": "583ba67573fad24200000001"
+			"Path": "FirstProject/Content/StarterContent/Audio/Light01.ubulk",
+			"ChunkId": "be9e1601522db45200000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Collapse_Cue.uasset",
-			"ChunkId": "98aed1bd86ad544d00000001"
+			"Path": "FirstProject/Content/StarterContent/Audio/Fire_Sparks01.uasset",
+			"ChunkId": "3bdc69df9fa9761500000001"
 		},
 		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Animations/Sniper_Rifle_A_Skeleton.uasset",
-			"ChunkId": "56ed13974586ea7100000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Animations/Shotgun_A_Skeleton.uasset",
-			"ChunkId": "a004c803cd00b5b200000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Animations/Rocket_Launcher_A_Skeleton.uasset",
-			"ChunkId": "03d782705c2f1dd600000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Animations/Pistols_A_Skeleton.uasset",
-			"ChunkId": "8e4ea5438312838900000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Animations/Knife_A_Skeleton.uasset",
-			"ChunkId": "0d6f06319d3352df00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_masks.uasset",
-			"ChunkId": "b8661cbb87ef102b00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_masks.ubulk",
-			"ChunkId": "b8661cbb87ef102b00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_Diff.uasset",
-			"ChunkId": "45b3dbcbda27b53f00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_Diff.ubulk",
-			"ChunkId": "45b3dbcbda27b53f00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Norm.uasset",
-			"ChunkId": "03bc527c0f66fc8c00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Norm.ubulk",
-			"ChunkId": "03bc527c0f66fc8c00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Masks.uasset",
-			"ChunkId": "13bd29cbeee65aeb00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Masks.ubulk",
-			"ChunkId": "13bd29cbeee65aeb00000002"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Fire01.uasset",
-			"ChunkId": "d43cdff46bfd578200000001"
-		},
-		{
-			"Path": "FirstProject/Content/StarterContent/Audio/Fire01.ubulk",
-			"ChunkId": "d43cdff46bfd578200000002"
+			"Path": "FirstProject/Content/StarterContent/Audio/Fire_Sparks01.ubulk",
+			"ChunkId": "3bdc69df9fa9761500000002"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Audio/Explosion02.uasset",
@@ -1655,146 +1627,6 @@
 		{
 			"Path": "FirstProject/Content/StarterContent/Audio/Collapse01.ubulk",
 			"ChunkId": "bf82397f33378c9300000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Norm.uasset",
-			"ChunkId": "cbd5611b9295d07c00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Norm.ubulk",
-			"ChunkId": "cbd5611b9295d07c00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Masks.uasset",
-			"ChunkId": "34887bfec613405500000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Masks.ubulk",
-			"ChunkId": "34887bfec613405500000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Diff.uasset",
-			"ChunkId": "7a4be1784a76540900000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Diff.ubulk",
-			"ChunkId": "7a4be1784a76540900000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Norm.uasset",
-			"ChunkId": "1bd3d0e06d30cf0f00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Norm.ubulk",
-			"ChunkId": "1bd3d0e06d30cf0f00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Masks.uasset",
-			"ChunkId": "4f5bbbba7f781b0000000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Masks.ubulk",
-			"ChunkId": "4f5bbbba7f781b0000000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Diff.uasset",
-			"ChunkId": "00dedad1e15c766e00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Diff.ubulk",
-			"ChunkId": "00dedad1e15c766e00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Diff.uasset",
-			"ChunkId": "da8f3cdfdfd6963a00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Diff.ubulk",
-			"ChunkId": "da8f3cdfdfd6963a00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Norm.uasset",
-			"ChunkId": "c5f50f508d3765d500000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Norm.ubulk",
-			"ChunkId": "c5f50f508d3765d500000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Masks.uasset",
-			"ChunkId": "ac4cc8fa216be27400000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Masks.ubulk",
-			"ChunkId": "ac4cc8fa216be27400000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Diff.uasset",
-			"ChunkId": "a0ea62dd4b587fb800000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Diff.ubulk",
-			"ChunkId": "a0ea62dd4b587fb800000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Knife_A_Norm.uasset",
-			"ChunkId": "ff29f43ab82fd06800000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Knife_A_Norm.ubulk",
-			"ChunkId": "ff29f43ab82fd06800000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Knife_A_Masks.uasset",
-			"ChunkId": "42f6400b55a5159e00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Knife_A_Masks.ubulk",
-			"ChunkId": "42f6400b55a5159e00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Knife_A_Diff.uasset",
-			"ChunkId": "8b39be94b029997100000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Knife_A_Diff.ubulk",
-			"ChunkId": "8b39be94b029997100000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Norm.uasset",
-			"ChunkId": "40bb210e5c8fcdb200000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Norm.ubulk",
-			"ChunkId": "40bb210e5c8fcdb200000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Masks.uasset",
-			"ChunkId": "cce3ad5a059759ea00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Masks.ubulk",
-			"ChunkId": "cce3ad5a059759ea00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Diff.uasset",
-			"ChunkId": "6c64bf90078b98d200000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Diff.ubulk",
-			"ChunkId": "6c64bf90078b98d200000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_Norm.uasset",
-			"ChunkId": "2a56190af499250100000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_Norm.ubulk",
-			"ChunkId": "2a56190af499250100000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Animations/Grenade_Launcher_A_Skeleton.uasset",
-			"ChunkId": "81d9454a3f6ee83c00000001"
 		},
 		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Animations/Assault_Rifle_A_Skeleton.uasset",
@@ -1855,6 +1687,174 @@
 		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Assault_Rifle_A_PhysicsAsset.uasset",
 			"ChunkId": "a4f078ebee96bd2d00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_Norm.uasset",
+			"ChunkId": "2a56190af499250100000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_Norm.ubulk",
+			"ChunkId": "2a56190af499250100000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_masks.uasset",
+			"ChunkId": "b8661cbb87ef102b00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_masks.ubulk",
+			"ChunkId": "b8661cbb87ef102b00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_Diff.uasset",
+			"ChunkId": "45b3dbcbda27b53f00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_Diff.ubulk",
+			"ChunkId": "45b3dbcbda27b53f00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Norm.uasset",
+			"ChunkId": "c5f50f508d3765d500000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Norm.ubulk",
+			"ChunkId": "c5f50f508d3765d500000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Masks.uasset",
+			"ChunkId": "ac4cc8fa216be27400000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Masks.ubulk",
+			"ChunkId": "ac4cc8fa216be27400000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Norm.uasset",
+			"ChunkId": "cbd5611b9295d07c00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Norm.ubulk",
+			"ChunkId": "cbd5611b9295d07c00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Masks.uasset",
+			"ChunkId": "34887bfec613405500000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Masks.ubulk",
+			"ChunkId": "34887bfec613405500000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Diff.uasset",
+			"ChunkId": "7a4be1784a76540900000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Diff.ubulk",
+			"ChunkId": "7a4be1784a76540900000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Norm.uasset",
+			"ChunkId": "1bd3d0e06d30cf0f00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Norm.ubulk",
+			"ChunkId": "1bd3d0e06d30cf0f00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Masks.uasset",
+			"ChunkId": "4f5bbbba7f781b0000000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Masks.ubulk",
+			"ChunkId": "4f5bbbba7f781b0000000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Diff.uasset",
+			"ChunkId": "00dedad1e15c766e00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Diff.ubulk",
+			"ChunkId": "00dedad1e15c766e00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Norm.uasset",
+			"ChunkId": "03bc527c0f66fc8c00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Norm.ubulk",
+			"ChunkId": "03bc527c0f66fc8c00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Masks.uasset",
+			"ChunkId": "13bd29cbeee65aeb00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Masks.ubulk",
+			"ChunkId": "13bd29cbeee65aeb00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Diff.uasset",
+			"ChunkId": "da8f3cdfdfd6963a00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Diff.ubulk",
+			"ChunkId": "da8f3cdfdfd6963a00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Diff.uasset",
+			"ChunkId": "a0ea62dd4b587fb800000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Diff.ubulk",
+			"ChunkId": "a0ea62dd4b587fb800000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Knife_A_Norm.uasset",
+			"ChunkId": "ff29f43ab82fd06800000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Knife_A_Norm.ubulk",
+			"ChunkId": "ff29f43ab82fd06800000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Knife_A_Masks.uasset",
+			"ChunkId": "42f6400b55a5159e00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Knife_A_Masks.ubulk",
+			"ChunkId": "42f6400b55a5159e00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Knife_A_Diff.uasset",
+			"ChunkId": "8b39be94b029997100000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Knife_A_Diff.ubulk",
+			"ChunkId": "8b39be94b029997100000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Norm.uasset",
+			"ChunkId": "40bb210e5c8fcdb200000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Norm.ubulk",
+			"ChunkId": "40bb210e5c8fcdb200000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Masks.uasset",
+			"ChunkId": "cce3ad5a059759ea00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Masks.ubulk",
+			"ChunkId": "cce3ad5a059759ea00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Diff.uasset",
+			"ChunkId": "6c64bf90078b98d200000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Diff.ubulk",
+			"ChunkId": "6c64bf90078b98d200000002"
 		},
 		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/Sound/SniperRifle/Wavs/SniperRifle_ImpactBody03.uasset",
@@ -3293,12 +3293,108 @@
 			"ChunkId": "966e16a4de024b2000000001"
 		},
 		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire04.uasset",
+			"ChunkId": "ca92aad32246b79a00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire04.ubulk",
+			"ChunkId": "ca92aad32246b79a00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire03.uasset",
+			"ChunkId": "af879cfa384e9b8a00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire03.ubulk",
+			"ChunkId": "af879cfa384e9b8a00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire02.uasset",
+			"ChunkId": "2437732e2a1eb70400000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire02.ubulk",
+			"ChunkId": "2437732e2a1eb70400000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Pickups/Textures/Pickup_Norm.uasset",
+			"ChunkId": "e72c073a844b562900000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Pickups/Textures/Pickup_Norm.ubulk",
+			"ChunkId": "e72c073a844b562900000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Pickups/Textures/Pickup_Masks.uasset",
+			"ChunkId": "e54c0205843455be00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Pickups/Textures/Pickup_Masks.ubulk",
+			"ChunkId": "e54c0205843455be00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Pickups/Textures/Pickup_Diff.uasset",
+			"ChunkId": "c78dc7e41124a70a00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/Pickups/Textures/Pickup_Diff.ubulk",
+			"ChunkId": "c78dc7e41124a70a00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_WoodChips_8x1_Normal_01.uasset",
+			"ChunkId": "e9f7b4cd8b8f892600000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_WoodChips_8x1_Normal_01.ubulk",
+			"ChunkId": "e9f7b4cd8b8f892600000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_WoodChips_8x1_01.uasset",
+			"ChunkId": "f4769b1a250e863700000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_WoodChips_8x1_01.ubulk",
+			"ChunkId": "f4769b1a250e863700000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Spherical_NormalMap_01.uasset",
+			"ChunkId": "6c90eb3e4deca1dd00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Spherical_NormalMap_01.ubulk",
+			"ChunkId": "6c90eb3e4deca1dd00000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Sparks_4x1_01.uasset",
+			"ChunkId": "859b4b1e156a892200000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Sparks_4x1_01.ubulk",
+			"ChunkId": "859b4b1e156a892200000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Sparks_02.uasset",
+			"ChunkId": "43890512b7385e2500000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Sparks_02.ubulk",
+			"ChunkId": "43890512b7385e2500000002"
+		},
+		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_SparkImpacts_2x2_01.uasset",
 			"ChunkId": "c2aedb49423bea0200000001"
 		},
 		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_SparkImpacts_2x2_01.ubulk",
 			"ChunkId": "c2aedb49423bea0200000002"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Smoke_8x8_B_01.uasset",
+			"ChunkId": "6592c0ac8334555a00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Smoke_8x8_B_01.ubulk",
+			"ChunkId": "6592c0ac8334555a00000002"
 		},
 		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire01.uasset",
@@ -3389,100 +3485,12 @@
 			"ChunkId": "d188f5471e5fc52500000002"
 		},
 		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire04.uasset",
-			"ChunkId": "ca92aad32246b79a00000001"
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Explosion_Macro_01.uasset",
+			"ChunkId": "030f8bc1efdc31de00000001"
 		},
 		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire04.ubulk",
-			"ChunkId": "ca92aad32246b79a00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire03.uasset",
-			"ChunkId": "af879cfa384e9b8a00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire03.ubulk",
-			"ChunkId": "af879cfa384e9b8a00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire02.uasset",
-			"ChunkId": "2437732e2a1eb70400000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire02.ubulk",
-			"ChunkId": "2437732e2a1eb70400000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Pickups/Textures/Pickup_Norm.uasset",
-			"ChunkId": "e72c073a844b562900000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Pickups/Textures/Pickup_Norm.ubulk",
-			"ChunkId": "e72c073a844b562900000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Pickups/Textures/Pickup_Masks.uasset",
-			"ChunkId": "e54c0205843455be00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Pickups/Textures/Pickup_Masks.ubulk",
-			"ChunkId": "e54c0205843455be00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Pickups/Textures/Pickup_Diff.uasset",
-			"ChunkId": "c78dc7e41124a70a00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/Pickups/Textures/Pickup_Diff.ubulk",
-			"ChunkId": "c78dc7e41124a70a00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_WoodChips_8x1_Normal_01.uasset",
-			"ChunkId": "e9f7b4cd8b8f892600000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_WoodChips_8x1_Normal_01.ubulk",
-			"ChunkId": "e9f7b4cd8b8f892600000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_WoodChips_8x1_01.uasset",
-			"ChunkId": "f4769b1a250e863700000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_WoodChips_8x1_01.ubulk",
-			"ChunkId": "f4769b1a250e863700000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Spherical_NormalMap_01.uasset",
-			"ChunkId": "6c90eb3e4deca1dd00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Spherical_NormalMap_01.ubulk",
-			"ChunkId": "6c90eb3e4deca1dd00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Sparks_4x1_01.uasset",
-			"ChunkId": "859b4b1e156a892200000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Sparks_4x1_01.ubulk",
-			"ChunkId": "859b4b1e156a892200000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Sparks_02.uasset",
-			"ChunkId": "43890512b7385e2500000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Sparks_02.ubulk",
-			"ChunkId": "43890512b7385e2500000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Smoke_8x8_B_01.uasset",
-			"ChunkId": "6592c0ac8334555a00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Smoke_8x8_B_01.ubulk",
-			"ChunkId": "6592c0ac8334555a00000002"
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Explosion_Macro_01.ubulk",
+			"ChunkId": "030f8bc1efdc31de00000002"
 		},
 		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_FL_Detail_01.uasset",
@@ -3645,14 +3653,6 @@
 			"ChunkId": "5516ce2c36f3d9ae00000001"
 		},
 		{
-			"Path": "Engine/Content/EditorMaterials/PreviewShadowIndicator.uasset",
-			"ChunkId": "2d5d52b0905803e600000001"
-		},
-		{
-			"Path": "Engine/Content/EditorMaterials/PreviewShadowIndicator.ubulk",
-			"ChunkId": "2d5d52b0905803e600000002"
-		},
-		{
 			"Path": "Engine/Content/EngineSky/T_Sky_Blue.uasset",
 			"ChunkId": "86737b633647e77300000001"
 		},
@@ -3661,20 +3661,20 @@
 			"ChunkId": "86737b633647e77300000002"
 		},
 		{
+			"Path": "Engine/Content/EngineSky/T_Sky_Clouds_M.uasset",
+			"ChunkId": "927b2fe4876a1f7400000001"
+		},
+		{
+			"Path": "Engine/Content/EngineSky/T_Sky_Clouds_M.ubulk",
+			"ChunkId": "927b2fe4876a1f7400000002"
+		},
+		{
 			"Path": "FirstProject/Content/AnimStarterPack/UE4_Mannequin/Textures/UE4Man_Logo_N.uasset",
 			"ChunkId": "0365122e5e44626e00000001"
 		},
 		{
 			"Path": "FirstProject/Content/AnimStarterPack/UE4_Mannequin/Textures/UE4Man_Logo_N.ubulk",
 			"ChunkId": "0365122e5e44626e00000002"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Explosion_Macro_01.uasset",
-			"ChunkId": "030f8bc1efdc31de00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Explosion_Macro_01.ubulk",
-			"ChunkId": "030f8bc1efdc31de00000002"
 		},
 		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Explosion_8x8_Temperature_01.uasset",
@@ -3813,6 +3813,14 @@
 			"ChunkId": "2a8ace463a029fae00000001"
 		},
 		{
+			"Path": "Engine/Content/EditorMaterials/PreviewShadowIndicator.uasset",
+			"ChunkId": "2d5d52b0905803e600000001"
+		},
+		{
+			"Path": "Engine/Content/EditorMaterials/PreviewShadowIndicator.ubulk",
+			"ChunkId": "2d5d52b0905803e600000002"
+		},
+		{
 			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.uasset",
 			"ChunkId": "2f8460ae5086bffa00000001"
 		},
@@ -3865,6 +3873,30 @@
 			"ChunkId": "0e2ba17bfda4135c00000001"
 		},
 		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Explosion_8x8_A_01.uasset",
+			"ChunkId": "9b97057aee04563000000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Explosion_8x8_A_01.ubulk",
+			"ChunkId": "9b97057aee04563000000002"
+		},
+		{
+			"Path": "Engine/Content/EngineSky/T_Sky_Stars.uasset",
+			"ChunkId": "56d51199b9b2142a00000001"
+		},
+		{
+			"Path": "Engine/Content/EngineSky/T_Sky_Stars.ubulk",
+			"ChunkId": "56d51199b9b2142a00000002"
+		},
+		{
+			"Path": "Engine/Content/EditorMeshes/ColorCalibrator/T_ColorGrid.uasset",
+			"ChunkId": "1842125bcd19545d00000001"
+		},
+		{
+			"Path": "Engine/Content/EditorMeshes/ColorCalibrator/T_ColorGrid.ubulk",
+			"ChunkId": "1842125bcd19545d00000002"
+		},
+		{
 			"Path": "Engine/Content/EditorMeshes/ColorCalibrator/M_ClearCoat.uasset",
 			"ChunkId": "76a5acb679b315ed00000001"
 		},
@@ -3909,48 +3941,20 @@
 			"ChunkId": "6ebbe4a6ced841cc00000001"
 		},
 		{
-			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.uasset",
-			"ChunkId": "4762b775bfe4b22d00000001"
-		},
-		{
 			"Path": "Engine/Content/EngineDebugMaterials/M_VolumeRenderSphereTracePP.uasset",
 			"ChunkId": "3bf2df25e14476d700000001"
+		},
+		{
+			"Path": "Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.uasset",
+			"ChunkId": "4762b775bfe4b22d00000001"
 		},
 		{
 			"Path": "Engine/Content/EngineMaterials/PhAT_JointLimitMaterial.uasset",
 			"ChunkId": "305a1ec18dd5a4be00000001"
 		},
 		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Explosion_8x8_A_01.uasset",
-			"ChunkId": "9b97057aee04563000000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/Textures/T_Explosion_8x8_A_01.ubulk",
-			"ChunkId": "9b97057aee04563000000002"
-		},
-		{
-			"Path": "Engine/Content/EngineSky/T_Sky_Clouds_M.uasset",
-			"ChunkId": "927b2fe4876a1f7400000001"
-		},
-		{
-			"Path": "Engine/Content/EngineSky/T_Sky_Clouds_M.ubulk",
-			"ChunkId": "927b2fe4876a1f7400000002"
-		},
-		{
-			"Path": "Engine/Content/EngineSky/T_Sky_Stars.uasset",
-			"ChunkId": "56d51199b9b2142a00000001"
-		},
-		{
-			"Path": "Engine/Content/EngineSky/T_Sky_Stars.ubulk",
-			"ChunkId": "56d51199b9b2142a00000002"
-		},
-		{
-			"Path": "Engine/Content/EditorMeshes/ColorCalibrator/T_ColorGrid.uasset",
-			"ChunkId": "1842125bcd19545d00000001"
-		},
-		{
-			"Path": "Engine/Content/EditorMeshes/ColorCalibrator/T_ColorGrid.ubulk",
-			"ChunkId": "1842125bcd19545d00000002"
+			"Path": "Engine/Plugins/Animation/ControlRig/Content/M_Manip.uasset",
+			"ChunkId": "9a5a67fa3c2b2de900000001"
 		},
 		{
 			"Path": "Engine/Content/MapTemplates/Sky/DaylightAmbientCubemap.uasset",
@@ -3963,10 +3967,6 @@
 		{
 			"Path": "Engine/Content/EditorMeshes/ColorCalibrator/Color_checker.ubulk",
 			"ChunkId": "658124b753b579cd00000002"
-		},
-		{
-			"Path": "Engine/Plugins/Animation/ControlRig/Content/M_Manip.uasset",
-			"ChunkId": "9a5a67fa3c2b2de900000001"
 		},
 		{
 			"Path": "Engine/Plugins/2D/Paper2D/Content/DummySprite.uasset",
@@ -5781,10 +5781,6 @@
 			"ChunkId": "8ce2efdb63cebc9900000002"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Particles/P_Steam_Lit.uasset",
-			"ChunkId": "84816d3b2f78cf0700000001"
-		},
-		{
 			"Path": "FirstProject/Content/StarterContent/Props/SM_Shelf.uasset",
 			"ChunkId": "f12414bdff4d204500000001"
 		},
@@ -5909,12 +5905,16 @@
 			"ChunkId": "08be7b5472ca8ff500000001"
 		},
 		{
-			"Path": "FirstProject/Content/StarterContent/Particles/P_Smoke.uasset",
-			"ChunkId": "1a319e90fcce3b1e00000001"
-		},
-		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/Weapons/Materials/M_AssaultRifle_01.uasset",
 			"ChunkId": "87199fe4319eee1700000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Particles/P_Steam_Lit.uasset",
+			"ChunkId": "84816d3b2f78cf0700000001"
+		},
+		{
+			"Path": "FirstProject/Content/StarterContent/Particles/P_Smoke.uasset",
+			"ChunkId": "1a319e90fcce3b1e00000001"
 		},
 		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/Pickups/Materials/M_Pickups_Inst.uasset",
@@ -6009,12 +6009,12 @@
 			"ChunkId": "970baa807995ae1700000001"
 		},
 		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Shotgun_Tracer_01.uasset",
-			"ChunkId": "ce20ff24b0710b6500000001"
-		},
-		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Pistol_Tracer_01.uasset",
 			"ChunkId": "1f3e4a00173695f500000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_AssaultRifle_Tracer_01.uasset",
+			"ChunkId": "93167234fa51827f00000001"
 		},
 		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_RocketLauncher_MuzzleFlash_Rear_01.uasset",
@@ -6037,8 +6037,16 @@
 			"ChunkId": "47f5a07c59de395200000001"
 		},
 		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Impact_Stone_Small_01.uasset",
+			"ChunkId": "c87bf3736f89ac7c00000001"
+		},
+		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_SniperRifle_Tracer_01.uasset",
 			"ChunkId": "41002bde9d74056d00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Shotgun_Tracer_01.uasset",
+			"ChunkId": "ce20ff24b0710b6500000001"
 		},
 		{
 			"Path": "FirstProject/Content/AnimStarterPack/BS_Jog.uasset",
@@ -6101,12 +6109,8 @@
 			"ChunkId": "3a0245e4904b10b500000001"
 		},
 		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Impact_Stone_Small_01.uasset",
-			"ChunkId": "c87bf3736f89ac7c00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_AssaultRifle_Tracer_01.uasset",
-			"ChunkId": "93167234fa51827f00000001"
+			"Path": "Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque_OneSided.uasset",
+			"ChunkId": "0e6a0028be3a2a6c00000001"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Particles/P_Explosion.uasset",
@@ -6119,10 +6123,6 @@
 		{
 			"Path": "FirstProject/Content/StarterContent/Particles/P_Fire.uasset",
 			"ChunkId": "d9b417805ca28c3b00000001"
-		},
-		{
-			"Path": "Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque_OneSided.uasset",
-			"ChunkId": "0e6a0028be3a2a6c00000001"
 		},
 		{
 			"Path": "Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent_OneSided.uasset",
@@ -6273,6 +6273,10 @@
 			"ChunkId": "f1d62d3af069363200000001"
 		},
 		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Impact_Stone_Large_01.uasset",
+			"ChunkId": "d7834a5b1f2cf4d600000001"
+		},
+		{
 			"Path": "Engine/Content/EngineSky/BP_Sky_Sphere.uasset",
 			"ChunkId": "cdbcbf4a06978c3b00000001"
 		},
@@ -6321,16 +6325,12 @@
 			"ChunkId": "368650c1fabbcfa500000001"
 		},
 		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Pistol_MuzzleFlash_01.uasset",
-			"ChunkId": "6ae3ff249214a3d800000001"
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_SniperRifle_MuzzleFlash_01.uasset",
+			"ChunkId": "8f0d555446bab93e00000001"
 		},
 		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Grenade_MuzzleFlash_01.uasset",
-			"ChunkId": "792a133e5168e2bb00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Impact_Stone_Large_01.uasset",
-			"ChunkId": "d7834a5b1f2cf4d600000001"
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Shotgun_MuzzleFlash_01.uasset",
+			"ChunkId": "8b95998055923ad300000001"
 		},
 		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Impact_Metal_Small_01.uasset",
@@ -6357,20 +6357,24 @@
 			"ChunkId": "9594b155543f6cb600000002"
 		},
 		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_SniperRifle_MuzzleFlash_01.uasset",
-			"ChunkId": "8f0d555446bab93e00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Shotgun_MuzzleFlash_01.uasset",
-			"ChunkId": "8b95998055923ad300000001"
-		},
-		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_RocketLauncher_MuzzleFlash_Front_01.uasset",
 			"ChunkId": "b1546080e12948e800000001"
 		},
 		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_RocketLauncher_Explosion_01.uasset",
 			"ChunkId": "3b97a21020ec1da200000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Pistol_MuzzleFlash_01.uasset",
+			"ChunkId": "6ae3ff249214a3d800000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Grenade_MuzzleFlash_01.uasset",
+			"ChunkId": "792a133e5168e2bb00000001"
+		},
+		{
+			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Grenade_Explosion_01.uasset",
+			"ChunkId": "342786901c92400800000001"
 		},
 		{
 			"Path": "FirstProject/Content/StarterContent/Blueprints/BP_LightStudio.uasset",
@@ -6411,10 +6415,6 @@
 		{
 			"Path": "FirstProject/Content/StarterContent/Maps/Minimal_Default.umap",
 			"ChunkId": "c18c1e9eb562281d00000001"
-		},
-		{
-			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_Grenade_Explosion_01.uasset",
-			"ChunkId": "342786901c92400800000001"
 		},
 		{
 			"Path": "FirstProject/Content/MilitaryWeapSilver/FX/P_AssaultRifle_MuzzleFlash.uasset",
@@ -6535,6 +6535,10 @@
 			"PackageChunkId": "f0a7f83421ac425b00000001"
 		},
 		{
+			"Name": "/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector",
+			"PackageChunkId": "5f510b7cd6e0bdc800000001"
+		},
+		{
 			"Name": "/SpeedTreeImporter/SpeedTree9/SpeedTreeBillboard",
 			"PackageChunkId": "8fcb1cae0c92026900000001"
 		},
@@ -6573,10 +6577,6 @@
 		{
 			"Name": "/Engine/Functions/Engine_MaterialFunctions02/ObjectLocalBounds",
 			"PackageChunkId": "8d4486caf50605b200000001"
-		},
-		{
-			"Name": "/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector",
-			"PackageChunkId": "5f510b7cd6e0bdc800000001"
 		},
 		{
 			"Name": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset",
@@ -6731,6 +6731,10 @@
 			"PackageChunkId": "8500a33b2fedbab800000001"
 		},
 		{
+			"Name": "/Engine/EngineDebugMaterials/VolumeToRender",
+			"PackageChunkId": "7f8259be57e87dce00000001"
+		},
+		{
 			"Name": "/SpeedTreeImporter/SpeedTree9/EmptyNormal",
 			"PackageChunkId": "6f3a7c0fe1cf64ce00000001"
 		},
@@ -6742,15 +6746,15 @@
 			]
 		},
 		{
-			"Name": "/Engine/EngineDebugMaterials/VolumeToRender",
-			"PackageChunkId": "7f8259be57e87dce00000001"
-		},
-		{
 			"Name": "/Paper2D/PlaceholderTextures/DummySpriteTexture",
 			"PackageChunkId": "2cc5808063f890db00000001",
 			"BulkDataChunkIds": [
 				"2cc5808063f890db00000002"
 			]
+		},
+		{
+			"Name": "/HairStrands/Materials/HairGroupColors",
+			"PackageChunkId": "55c5d73fec0135d200000001"
 		},
 		{
 			"Name": "/Engine/EditorLandscapeResources/DataLayer",
@@ -6795,32 +6799,6 @@
 		{
 			"Name": "/Engine/VREditor/TransformGizmo/Main",
 			"PackageChunkId": "36f9c4a1a41147a000000001"
-		},
-		{
-			"Name": "/HairStrands/Materials/HairGroupColors",
-			"PackageChunkId": "55c5d73fec0135d200000001"
-		},
-		{
-			"Name": "/Engine/EngineMaterials/HairDebugColor",
-			"PackageChunkId": "8efe6173efa8192200000001"
-		},
-		{
-			"Name": "/Engine/EngineMaterials/HairColorMap",
-			"PackageChunkId": "2c913f2705b478d900000001"
-		},
-		{
-			"Name": "/Engine/EditorMaterials/ParticleSystems/PSysThumbnail_OOD",
-			"PackageChunkId": "0bf1d6a9c47f8ccc00000001",
-			"BulkDataChunkIds": [
-				"0bf1d6a9c47f8ccc00000002"
-			]
-		},
-		{
-			"Name": "/Engine/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage",
-			"PackageChunkId": "ba6543c81e92e56d00000001",
-			"BulkDataChunkIds": [
-				"ba6543c81e92e56d00000002"
-			]
 		},
 		{
 			"Name": "/Engine/VREditor/TransformGizmo/TranslucentTransformGizmoMaterial",
@@ -6873,6 +6851,28 @@
 		{
 			"Name": "/Engine/EditorResources/S_TriggerBox",
 			"PackageChunkId": "8953c1244c740aad00000001"
+		},
+		{
+			"Name": "/Engine/EngineMaterials/HairDebugColor",
+			"PackageChunkId": "8efe6173efa8192200000001"
+		},
+		{
+			"Name": "/Engine/EngineMaterials/HairColorMap",
+			"PackageChunkId": "2c913f2705b478d900000001"
+		},
+		{
+			"Name": "/Engine/EditorMaterials/ParticleSystems/PSysThumbnail_OOD",
+			"PackageChunkId": "0bf1d6a9c47f8ccc00000001",
+			"BulkDataChunkIds": [
+				"0bf1d6a9c47f8ccc00000002"
+			]
+		},
+		{
+			"Name": "/Engine/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage",
+			"PackageChunkId": "ba6543c81e92e56d00000001",
+			"BulkDataChunkIds": [
+				"ba6543c81e92e56d00000002"
+			]
 		},
 		{
 			"Name": "/Engine/VREditor/LaserPointer/VR_LaserPower_01",
@@ -6934,10 +6934,10 @@
 			"PackageChunkId": "24d7c88768eb5b3800000001"
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_TableRound_N",
-			"PackageChunkId": "16fc57dc582896c800000001",
+			"Name": "/Game/StarterContent/Textures/T_Tech_Hex_Tile_M",
+			"PackageChunkId": "61f98d7ba9495ba700000001",
 			"BulkDataChunkIds": [
-				"16fc57dc582896c800000002"
+				"61f98d7ba9495ba700000002"
 			]
 		},
 		{
@@ -7158,10 +7158,10 @@
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_Tech_Hex_Tile_M",
-			"PackageChunkId": "61f98d7ba9495ba700000001",
+			"Name": "/Game/StarterContent/Textures/T_Rock_Sandstone_N",
+			"PackageChunkId": "9b6d7640124d50bf00000001",
 			"BulkDataChunkIds": [
-				"61f98d7ba9495ba700000002"
+				"9b6d7640124d50bf00000002"
 			]
 		},
 		{
@@ -7179,10 +7179,10 @@
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_Rock_Basalt_N",
-			"PackageChunkId": "9d1db76b8ca10b3700000001",
+			"Name": "/Game/StarterContent/Textures/T_TableRound_N",
+			"PackageChunkId": "16fc57dc582896c800000001",
 			"BulkDataChunkIds": [
-				"9d1db76b8ca10b3700000002"
+				"16fc57dc582896c800000002"
 			]
 		},
 		{
@@ -7270,11 +7270,15 @@
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_Rock_Sandstone_N",
-			"PackageChunkId": "9b6d7640124d50bf00000001",
+			"Name": "/Game/StarterContent/Textures/T_Lamp_M",
+			"PackageChunkId": "3b1fc13e32aa21d500000001",
 			"BulkDataChunkIds": [
-				"9b6d7640124d50bf00000002"
+				"3b1fc13e32aa21d500000002"
 			]
+		},
+		{
+			"Name": "/Game/StarterContent/Textures/T_MacroVariation",
+			"PackageChunkId": "77f02809295ce51e00000001"
 		},
 		{
 			"Name": "/Game/StarterContent/Textures/T_Rock_Sandstone_D",
@@ -7291,10 +7295,10 @@
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_Ground_Moss_N",
-			"PackageChunkId": "c64cb0e5d2faa85b00000001",
+			"Name": "/Game/StarterContent/Textures/T_Rock_Basalt_N",
+			"PackageChunkId": "9d1db76b8ca10b3700000001",
 			"BulkDataChunkIds": [
-				"c64cb0e5d2faa85b00000002"
+				"9d1db76b8ca10b3700000002"
 			]
 		},
 		{
@@ -7382,10 +7386,6 @@
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_MacroVariation",
-			"PackageChunkId": "77f02809295ce51e00000001"
-		},
-		{
 			"Name": "/Game/StarterContent/Textures/T_Lamp_N",
 			"PackageChunkId": "78c3ce2fe867747900000001",
 			"BulkDataChunkIds": [
@@ -7393,24 +7393,17 @@
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_Lamp_M",
-			"PackageChunkId": "3b1fc13e32aa21d500000001",
+			"Name": "/Game/StarterContent/Textures/T_Detail_Rocky_N",
+			"PackageChunkId": "50e6ea19a1c52db400000001",
 			"BulkDataChunkIds": [
-				"3b1fc13e32aa21d500000002"
+				"50e6ea19a1c52db400000002"
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_Concrete_Tiles_M",
-			"PackageChunkId": "d0d34ddac239b25c00000001",
+			"Name": "/Game/StarterContent/Textures/T_Ground_Moss_N",
+			"PackageChunkId": "c64cb0e5d2faa85b00000001",
 			"BulkDataChunkIds": [
-				"d0d34ddac239b25c00000002"
-			]
-		},
-		{
-			"Name": "/Game/StarterContent/Textures/T_Concrete_Tiles_Variation_M",
-			"PackageChunkId": "99bc8ef75040263800000001",
-			"BulkDataChunkIds": [
-				"99bc8ef75040263800000002"
+				"c64cb0e5d2faa85b00000002"
 			]
 		},
 		{
@@ -7512,10 +7505,24 @@
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_Detail_Rocky_N",
-			"PackageChunkId": "50e6ea19a1c52db400000001",
+			"Name": "/Game/StarterContent/Textures/T_CobbleStone_Pebble_D",
+			"PackageChunkId": "d28643baccdb52bf00000001",
 			"BulkDataChunkIds": [
-				"50e6ea19a1c52db400000002"
+				"d28643baccdb52bf00000002"
+			]
+		},
+		{
+			"Name": "/Game/StarterContent/Textures/T_CobbleStone_Pebble_M",
+			"PackageChunkId": "1c8888dc8bfb3fa600000001",
+			"BulkDataChunkIds": [
+				"1c8888dc8bfb3fa600000002"
+			]
+		},
+		{
+			"Name": "/Game/StarterContent/Textures/T_Concrete_Tiles_Variation_M",
+			"PackageChunkId": "99bc8ef75040263800000001",
+			"BulkDataChunkIds": [
+				"99bc8ef75040263800000002"
 			]
 		},
 		{
@@ -7526,10 +7533,10 @@
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_Chair_N",
-			"PackageChunkId": "dbc70f7b2dd6e3b600000001",
+			"Name": "/Game/StarterContent/Textures/T_Concrete_Tiles_M",
+			"PackageChunkId": "d0d34ddac239b25c00000001",
 			"BulkDataChunkIds": [
-				"dbc70f7b2dd6e3b600000002"
+				"d0d34ddac239b25c00000002"
 			]
 		},
 		{
@@ -7617,18 +7624,19 @@
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_CobbleStone_Pebble_M",
-			"PackageChunkId": "1c8888dc8bfb3fa600000001",
+			"Name": "/Game/StarterContent/Props/Materials/M_MaterialSphere_Plain",
+			"PackageChunkId": "e57ce1554d16db3d00000001"
+		},
+		{
+			"Name": "/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M",
+			"PackageChunkId": "20672ddc85d532db00000001",
 			"BulkDataChunkIds": [
-				"1c8888dc8bfb3fa600000002"
+				"20672ddc85d532db00000002"
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_CobbleStone_Pebble_D",
-			"PackageChunkId": "d28643baccdb52bf00000001",
-			"BulkDataChunkIds": [
-				"d28643baccdb52bf00000002"
-			]
+			"Name": "/Game/StarterContent/Textures/T_Brick_Clay_New_N",
+			"PackageChunkId": "71514267bea5cf6b00000001"
 		},
 		{
 			"Name": "/Game/StarterContent/Textures/T_Checker_Noise_M",
@@ -7638,17 +7646,10 @@
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N",
-			"PackageChunkId": "d8ce1ee62eb6262200000001",
+			"Name": "/Game/StarterContent/Textures/T_Chair_N",
+			"PackageChunkId": "dbc70f7b2dd6e3b600000001",
 			"BulkDataChunkIds": [
-				"d8ce1ee62eb6262200000002"
-			]
-		},
-		{
-			"Name": "/Game/StarterContent/Textures/T_Brick_Clay_New_D",
-			"PackageChunkId": "541a4352fded14dd00000001",
-			"BulkDataChunkIds": [
-				"541a4352fded14dd00000002"
+				"dbc70f7b2dd6e3b600000002"
 			]
 		},
 		{
@@ -7743,16 +7744,22 @@
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_Brick_Clay_New_N",
-			"PackageChunkId": "71514267bea5cf6b00000001"
-		},
-		{
 			"Name": "/Game/StarterContent/Textures/T_Brick_Clay_New_M",
 			"PackageChunkId": "c6ef2149fd62ed8a00000001"
 		},
 		{
-			"Name": "/Game/StarterContent/Props/Materials/M_MaterialSphere_Plain",
-			"PackageChunkId": "e57ce1554d16db3d00000001"
+			"Name": "/Game/StarterContent/Textures/T_Brick_Clay_New_D",
+			"PackageChunkId": "541a4352fded14dd00000001",
+			"BulkDataChunkIds": [
+				"541a4352fded14dd00000002"
+			]
+		},
+		{
+			"Name": "/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N",
+			"PackageChunkId": "d8ce1ee62eb6262200000001",
+			"BulkDataChunkIds": [
+				"d8ce1ee62eb6262200000002"
+			]
 		},
 		{
 			"Name": "/Game/StarterContent/Props/Materials/M_MaterialSphere",
@@ -7791,10 +7798,14 @@
 			"PackageChunkId": "4a8a0e2ceb5accc400000001"
 		},
 		{
-			"Name": "/Game/StarterContent/Textures/T_Brick_Clay_Beveled_M",
-			"PackageChunkId": "20672ddc85d532db00000001",
+			"Name": "/Game/StarterContent/Audio/Steam01_Cue",
+			"PackageChunkId": "53755d8e9a90b23f00000001"
+		},
+		{
+			"Name": "/Game/StarterContent/Audio/Steam01",
+			"PackageChunkId": "18abf760a31842ef00000001",
 			"BulkDataChunkIds": [
-				"20672ddc85d532db00000002"
+				"18abf760a31842ef00000002"
 			]
 		},
 		{
@@ -7805,8 +7816,25 @@
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Audio/Steam01_Cue",
-			"PackageChunkId": "53755d8e9a90b23f00000001"
+			"Name": "/Game/StarterContent/Maps/StarterMap_BuiltData",
+			"PackageChunkId": "5cf0172e915d8e3600000001",
+			"BulkDataChunkIds": [
+				"5cf0172e915d8e3600000002"
+			]
+		},
+		{
+			"Name": "/Game/StarterContent/Maps/Minimal_Default_BuiltData",
+			"PackageChunkId": "21ce25f9846d572700000001",
+			"BulkDataChunkIds": [
+				"21ce25f9846d572700000002"
+			]
+		},
+		{
+			"Name": "/Game/StarterContent/Maps/Advanced_Lighting_BuiltData",
+			"PackageChunkId": "30f95388a2288fc700000001",
+			"BulkDataChunkIds": [
+				"30f95388a2288fc700000002"
+			]
 		},
 		{
 			"Name": "/Game/StarterContent/Audio/Starter_Music_Cue",
@@ -7833,49 +7861,46 @@
 			"PackageChunkId": "3e4bb06fb511317800000001"
 		},
 		{
-			"Name": "/Game/StarterContent/Audio/Light01",
-			"PackageChunkId": "be9e1601522db45200000001",
-			"BulkDataChunkIds": [
-				"be9e1601522db45200000002"
-			]
+			"Name": "/Game/StarterContent/Audio/Fire01_Cue",
+			"PackageChunkId": "1b6e8f75fd73148300000001"
 		},
 		{
-			"Name": "/Game/StarterContent/Audio/Fire_Sparks01",
-			"PackageChunkId": "3bdc69df9fa9761500000001",
-			"BulkDataChunkIds": [
-				"3bdc69df9fa9761500000002"
-			]
+			"Name": "/Game/StarterContent/Audio/Explosion_Cue",
+			"PackageChunkId": "583ba67573fad24200000001"
 		},
 		{
-			"Name": "/Game/StarterContent/Maps/StarterMap_BuiltData",
-			"PackageChunkId": "5cf0172e915d8e3600000001",
-			"BulkDataChunkIds": [
-				"5cf0172e915d8e3600000002"
-			]
+			"Name": "/Game/StarterContent/Audio/Collapse_Cue",
+			"PackageChunkId": "98aed1bd86ad544d00000001"
 		},
 		{
-			"Name": "/Game/StarterContent/Maps/Minimal_Default_BuiltData",
-			"PackageChunkId": "21ce25f9846d572700000001",
-			"BulkDataChunkIds": [
-				"21ce25f9846d572700000002"
-			]
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Animations/Sniper_Rifle_A_Skeleton",
+			"PackageChunkId": "56ed13974586ea7100000001"
 		},
 		{
-			"Name": "/Game/StarterContent/Maps/Advanced_Lighting_BuiltData",
-			"PackageChunkId": "30f95388a2288fc700000001",
-			"BulkDataChunkIds": [
-				"30f95388a2288fc700000002"
-			]
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Animations/Shotgun_A_Skeleton",
+			"PackageChunkId": "a004c803cd00b5b200000001"
 		},
 		{
-			"Name": "/Game/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight",
-			"PackageChunkId": "cf8509b15112d85600000001"
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Animations/Rocket_Launcher_A_Skeleton",
+			"PackageChunkId": "03d782705c2f1dd600000001"
 		},
 		{
-			"Name": "/Game/StarterContent/Audio/Steam01",
-			"PackageChunkId": "18abf760a31842ef00000001",
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Animations/Pistols_A_Skeleton",
+			"PackageChunkId": "8e4ea5438312838900000001"
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Animations/Knife_A_Skeleton",
+			"PackageChunkId": "0d6f06319d3352df00000001"
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Animations/Grenade_Launcher_A_Skeleton",
+			"PackageChunkId": "81d9454a3f6ee83c00000001"
+		},
+		{
+			"Name": "/Game/StarterContent/Audio/Fire01",
+			"PackageChunkId": "d43cdff46bfd578200000001",
 			"BulkDataChunkIds": [
-				"18abf760a31842ef00000002"
+				"d43cdff46bfd578200000002"
 			]
 		},
 		{
@@ -7884,6 +7909,10 @@
 			"BulkDataChunkIds": [
 				"e7c1f614cc33289800000002"
 			]
+		},
+		{
+			"Name": "/Game/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight",
+			"PackageChunkId": "cf8509b15112d85600000001"
 		},
 		{
 			"Name": "/Game/StarterContent/Audio/Starter_Wind05",
@@ -7921,70 +7950,17 @@
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Audio/Fire01_Cue",
-			"PackageChunkId": "1b6e8f75fd73148300000001"
-		},
-		{
-			"Name": "/Game/StarterContent/Audio/Explosion_Cue",
-			"PackageChunkId": "583ba67573fad24200000001"
-		},
-		{
-			"Name": "/Game/StarterContent/Audio/Collapse_Cue",
-			"PackageChunkId": "98aed1bd86ad544d00000001"
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Animations/Sniper_Rifle_A_Skeleton",
-			"PackageChunkId": "56ed13974586ea7100000001"
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Animations/Shotgun_A_Skeleton",
-			"PackageChunkId": "a004c803cd00b5b200000001"
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Animations/Rocket_Launcher_A_Skeleton",
-			"PackageChunkId": "03d782705c2f1dd600000001"
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Animations/Pistols_A_Skeleton",
-			"PackageChunkId": "8e4ea5438312838900000001"
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Animations/Knife_A_Skeleton",
-			"PackageChunkId": "0d6f06319d3352df00000001"
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_masks",
-			"PackageChunkId": "b8661cbb87ef102b00000001",
+			"Name": "/Game/StarterContent/Audio/Light01",
+			"PackageChunkId": "be9e1601522db45200000001",
 			"BulkDataChunkIds": [
-				"b8661cbb87ef102b00000002"
+				"be9e1601522db45200000002"
 			]
 		},
 		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_Diff",
-			"PackageChunkId": "45b3dbcbda27b53f00000001",
+			"Name": "/Game/StarterContent/Audio/Fire_Sparks01",
+			"PackageChunkId": "3bdc69df9fa9761500000001",
 			"BulkDataChunkIds": [
-				"45b3dbcbda27b53f00000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Norm",
-			"PackageChunkId": "03bc527c0f66fc8c00000001",
-			"BulkDataChunkIds": [
-				"03bc527c0f66fc8c00000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Masks",
-			"PackageChunkId": "13bd29cbeee65aeb00000001",
-			"BulkDataChunkIds": [
-				"13bd29cbeee65aeb00000002"
-			]
-		},
-		{
-			"Name": "/Game/StarterContent/Audio/Fire01",
-			"PackageChunkId": "d43cdff46bfd578200000001",
-			"BulkDataChunkIds": [
-				"d43cdff46bfd578200000002"
+				"3bdc69df9fa9761500000002"
 			]
 		},
 		{
@@ -8014,129 +7990,6 @@
 			"BulkDataChunkIds": [
 				"bf82397f33378c9300000002"
 			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Norm",
-			"PackageChunkId": "cbd5611b9295d07c00000001",
-			"BulkDataChunkIds": [
-				"cbd5611b9295d07c00000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Masks",
-			"PackageChunkId": "34887bfec613405500000001",
-			"BulkDataChunkIds": [
-				"34887bfec613405500000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Diff",
-			"PackageChunkId": "7a4be1784a76540900000001",
-			"BulkDataChunkIds": [
-				"7a4be1784a76540900000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Norm",
-			"PackageChunkId": "1bd3d0e06d30cf0f00000001",
-			"BulkDataChunkIds": [
-				"1bd3d0e06d30cf0f00000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Masks",
-			"PackageChunkId": "4f5bbbba7f781b0000000001",
-			"BulkDataChunkIds": [
-				"4f5bbbba7f781b0000000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Diff",
-			"PackageChunkId": "00dedad1e15c766e00000001",
-			"BulkDataChunkIds": [
-				"00dedad1e15c766e00000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Diff",
-			"PackageChunkId": "da8f3cdfdfd6963a00000001",
-			"BulkDataChunkIds": [
-				"da8f3cdfdfd6963a00000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Norm",
-			"PackageChunkId": "c5f50f508d3765d500000001",
-			"BulkDataChunkIds": [
-				"c5f50f508d3765d500000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Masks",
-			"PackageChunkId": "ac4cc8fa216be27400000001",
-			"BulkDataChunkIds": [
-				"ac4cc8fa216be27400000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Diff",
-			"PackageChunkId": "a0ea62dd4b587fb800000001",
-			"BulkDataChunkIds": [
-				"a0ea62dd4b587fb800000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Knife_A_Norm",
-			"PackageChunkId": "ff29f43ab82fd06800000001",
-			"BulkDataChunkIds": [
-				"ff29f43ab82fd06800000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Knife_A_Masks",
-			"PackageChunkId": "42f6400b55a5159e00000001",
-			"BulkDataChunkIds": [
-				"42f6400b55a5159e00000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Knife_A_Diff",
-			"PackageChunkId": "8b39be94b029997100000001",
-			"BulkDataChunkIds": [
-				"8b39be94b029997100000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Norm",
-			"PackageChunkId": "40bb210e5c8fcdb200000001",
-			"BulkDataChunkIds": [
-				"40bb210e5c8fcdb200000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Masks",
-			"PackageChunkId": "cce3ad5a059759ea00000001",
-			"BulkDataChunkIds": [
-				"cce3ad5a059759ea00000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Diff",
-			"PackageChunkId": "6c64bf90078b98d200000001",
-			"BulkDataChunkIds": [
-				"6c64bf90078b98d200000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_Norm",
-			"PackageChunkId": "2a56190af499250100000001",
-			"BulkDataChunkIds": [
-				"2a56190af499250100000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Weapons/Animations/Grenade_Launcher_A_Skeleton",
-			"PackageChunkId": "81d9454a3f6ee83c00000001"
 		},
 		{
 			"Name": "/Game/MilitaryWeapSilver/Weapons/Animations/Assault_Rifle_A_Skeleton",
@@ -8197,6 +8050,153 @@
 		{
 			"Name": "/Game/MilitaryWeapSilver/Weapons/Assault_Rifle_A_PhysicsAsset",
 			"PackageChunkId": "a4f078ebee96bd2d00000001"
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_Norm",
+			"PackageChunkId": "2a56190af499250100000001",
+			"BulkDataChunkIds": [
+				"2a56190af499250100000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_masks",
+			"PackageChunkId": "b8661cbb87ef102b00000001",
+			"BulkDataChunkIds": [
+				"b8661cbb87ef102b00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Assault_Rifle_A_Diff",
+			"PackageChunkId": "45b3dbcbda27b53f00000001",
+			"BulkDataChunkIds": [
+				"45b3dbcbda27b53f00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Norm",
+			"PackageChunkId": "c5f50f508d3765d500000001",
+			"BulkDataChunkIds": [
+				"c5f50f508d3765d500000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Masks",
+			"PackageChunkId": "ac4cc8fa216be27400000001",
+			"BulkDataChunkIds": [
+				"ac4cc8fa216be27400000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Norm",
+			"PackageChunkId": "cbd5611b9295d07c00000001",
+			"BulkDataChunkIds": [
+				"cbd5611b9295d07c00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Masks",
+			"PackageChunkId": "34887bfec613405500000001",
+			"BulkDataChunkIds": [
+				"34887bfec613405500000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Sniper_Rifle_A_Diff",
+			"PackageChunkId": "7a4be1784a76540900000001",
+			"BulkDataChunkIds": [
+				"7a4be1784a76540900000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Norm",
+			"PackageChunkId": "1bd3d0e06d30cf0f00000001",
+			"BulkDataChunkIds": [
+				"1bd3d0e06d30cf0f00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Masks",
+			"PackageChunkId": "4f5bbbba7f781b0000000001",
+			"BulkDataChunkIds": [
+				"4f5bbbba7f781b0000000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Shotgun_A_Diff",
+			"PackageChunkId": "00dedad1e15c766e00000001",
+			"BulkDataChunkIds": [
+				"00dedad1e15c766e00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Norm",
+			"PackageChunkId": "03bc527c0f66fc8c00000001",
+			"BulkDataChunkIds": [
+				"03bc527c0f66fc8c00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Masks",
+			"PackageChunkId": "13bd29cbeee65aeb00000001",
+			"BulkDataChunkIds": [
+				"13bd29cbeee65aeb00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Rocket_launcher_A_Diff",
+			"PackageChunkId": "da8f3cdfdfd6963a00000001",
+			"BulkDataChunkIds": [
+				"da8f3cdfdfd6963a00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Pistols_A_Diff",
+			"PackageChunkId": "a0ea62dd4b587fb800000001",
+			"BulkDataChunkIds": [
+				"a0ea62dd4b587fb800000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Knife_A_Norm",
+			"PackageChunkId": "ff29f43ab82fd06800000001",
+			"BulkDataChunkIds": [
+				"ff29f43ab82fd06800000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Knife_A_Masks",
+			"PackageChunkId": "42f6400b55a5159e00000001",
+			"BulkDataChunkIds": [
+				"42f6400b55a5159e00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Knife_A_Diff",
+			"PackageChunkId": "8b39be94b029997100000001",
+			"BulkDataChunkIds": [
+				"8b39be94b029997100000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Norm",
+			"PackageChunkId": "40bb210e5c8fcdb200000001",
+			"BulkDataChunkIds": [
+				"40bb210e5c8fcdb200000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Masks",
+			"PackageChunkId": "cce3ad5a059759ea00000001",
+			"BulkDataChunkIds": [
+				"cce3ad5a059759ea00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Weapons/Textures/Grenade_Launcher_A_Diff",
+			"PackageChunkId": "6c64bf90078b98d200000001",
+			"BulkDataChunkIds": [
+				"6c64bf90078b98d200000002"
+			]
 		},
 		{
 			"Name": "/Game/MilitaryWeapSilver/Sound/SniperRifle/Wavs/SniperRifle_ImpactBody03",
@@ -9459,10 +9459,94 @@
 			"PackageChunkId": "966e16a4de024b2000000001"
 		},
 		{
+			"Name": "/Game/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire04",
+			"PackageChunkId": "ca92aad32246b79a00000001",
+			"BulkDataChunkIds": [
+				"ca92aad32246b79a00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire03",
+			"PackageChunkId": "af879cfa384e9b8a00000001",
+			"BulkDataChunkIds": [
+				"af879cfa384e9b8a00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire02",
+			"PackageChunkId": "2437732e2a1eb70400000001",
+			"BulkDataChunkIds": [
+				"2437732e2a1eb70400000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Pickups/Textures/Pickup_Norm",
+			"PackageChunkId": "e72c073a844b562900000001",
+			"BulkDataChunkIds": [
+				"e72c073a844b562900000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Pickups/Textures/Pickup_Masks",
+			"PackageChunkId": "e54c0205843455be00000001",
+			"BulkDataChunkIds": [
+				"e54c0205843455be00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/Pickups/Textures/Pickup_Diff",
+			"PackageChunkId": "c78dc7e41124a70a00000001",
+			"BulkDataChunkIds": [
+				"c78dc7e41124a70a00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_WoodChips_8x1_Normal_01",
+			"PackageChunkId": "e9f7b4cd8b8f892600000001",
+			"BulkDataChunkIds": [
+				"e9f7b4cd8b8f892600000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_WoodChips_8x1_01",
+			"PackageChunkId": "f4769b1a250e863700000001",
+			"BulkDataChunkIds": [
+				"f4769b1a250e863700000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_Spherical_NormalMap_01",
+			"PackageChunkId": "6c90eb3e4deca1dd00000001",
+			"BulkDataChunkIds": [
+				"6c90eb3e4deca1dd00000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_Sparks_4x1_01",
+			"PackageChunkId": "859b4b1e156a892200000001",
+			"BulkDataChunkIds": [
+				"859b4b1e156a892200000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_Sparks_02",
+			"PackageChunkId": "43890512b7385e2500000001",
+			"BulkDataChunkIds": [
+				"43890512b7385e2500000002"
+			]
+		},
+		{
 			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_SparkImpacts_2x2_01",
 			"PackageChunkId": "c2aedb49423bea0200000001",
 			"BulkDataChunkIds": [
 				"c2aedb49423bea0200000002"
+			]
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_Smoke_8x8_B_01",
+			"PackageChunkId": "6592c0ac8334555a00000001",
+			"BulkDataChunkIds": [
+				"6592c0ac8334555a00000002"
 			]
 		},
 		{
@@ -9543,87 +9627,10 @@
 			]
 		},
 		{
-			"Name": "/Game/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire04",
-			"PackageChunkId": "ca92aad32246b79a00000001",
+			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_Explosion_Macro_01",
+			"PackageChunkId": "030f8bc1efdc31de00000001",
 			"BulkDataChunkIds": [
-				"ca92aad32246b79a00000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire03",
-			"PackageChunkId": "af879cfa384e9b8a00000001",
-			"BulkDataChunkIds": [
-				"af879cfa384e9b8a00000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Sound/GrenadeLauncher/Wavs/GrenadeLauncherA_Fire02",
-			"PackageChunkId": "2437732e2a1eb70400000001",
-			"BulkDataChunkIds": [
-				"2437732e2a1eb70400000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Pickups/Textures/Pickup_Norm",
-			"PackageChunkId": "e72c073a844b562900000001",
-			"BulkDataChunkIds": [
-				"e72c073a844b562900000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Pickups/Textures/Pickup_Masks",
-			"PackageChunkId": "e54c0205843455be00000001",
-			"BulkDataChunkIds": [
-				"e54c0205843455be00000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/Pickups/Textures/Pickup_Diff",
-			"PackageChunkId": "c78dc7e41124a70a00000001",
-			"BulkDataChunkIds": [
-				"c78dc7e41124a70a00000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_WoodChips_8x1_Normal_01",
-			"PackageChunkId": "e9f7b4cd8b8f892600000001",
-			"BulkDataChunkIds": [
-				"e9f7b4cd8b8f892600000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_WoodChips_8x1_01",
-			"PackageChunkId": "f4769b1a250e863700000001",
-			"BulkDataChunkIds": [
-				"f4769b1a250e863700000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_Spherical_NormalMap_01",
-			"PackageChunkId": "6c90eb3e4deca1dd00000001",
-			"BulkDataChunkIds": [
-				"6c90eb3e4deca1dd00000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_Sparks_4x1_01",
-			"PackageChunkId": "859b4b1e156a892200000001",
-			"BulkDataChunkIds": [
-				"859b4b1e156a892200000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_Sparks_02",
-			"PackageChunkId": "43890512b7385e2500000001",
-			"BulkDataChunkIds": [
-				"43890512b7385e2500000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_Smoke_8x8_B_01",
-			"PackageChunkId": "6592c0ac8334555a00000001",
-			"BulkDataChunkIds": [
-				"6592c0ac8334555a00000002"
+				"030f8bc1efdc31de00000002"
 			]
 		},
 		{
@@ -9771,13 +9778,6 @@
 			"PackageChunkId": "5516ce2c36f3d9ae00000001"
 		},
 		{
-			"Name": "/Engine/EditorMaterials/PreviewShadowIndicator",
-			"PackageChunkId": "2d5d52b0905803e600000001",
-			"BulkDataChunkIds": [
-				"2d5d52b0905803e600000002"
-			]
-		},
-		{
 			"Name": "/Engine/EngineSky/T_Sky_Blue",
 			"PackageChunkId": "86737b633647e77300000001",
 			"BulkDataChunkIds": [
@@ -9785,17 +9785,17 @@
 			]
 		},
 		{
+			"Name": "/Engine/EngineSky/T_Sky_Clouds_M",
+			"PackageChunkId": "927b2fe4876a1f7400000001",
+			"BulkDataChunkIds": [
+				"927b2fe4876a1f7400000002"
+			]
+		},
+		{
 			"Name": "/Game/AnimStarterPack/UE4_Mannequin/Textures/UE4Man_Logo_N",
 			"PackageChunkId": "0365122e5e44626e00000001",
 			"BulkDataChunkIds": [
 				"0365122e5e44626e00000002"
-			]
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_Explosion_Macro_01",
-			"PackageChunkId": "030f8bc1efdc31de00000001",
-			"BulkDataChunkIds": [
-				"030f8bc1efdc31de00000002"
 			]
 		},
 		{
@@ -9920,6 +9920,13 @@
 			"PackageChunkId": "2a8ace463a029fae00000001"
 		},
 		{
+			"Name": "/Engine/EditorMaterials/PreviewShadowIndicator",
+			"PackageChunkId": "2d5d52b0905803e600000001",
+			"BulkDataChunkIds": [
+				"2d5d52b0905803e600000002"
+			]
+		},
+		{
 			"Name": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals",
 			"PackageChunkId": "2f8460ae5086bffa00000001"
 		},
@@ -9972,6 +9979,27 @@
 			"PackageChunkId": "0e2ba17bfda4135c00000001"
 		},
 		{
+			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_Explosion_8x8_A_01",
+			"PackageChunkId": "9b97057aee04563000000001",
+			"BulkDataChunkIds": [
+				"9b97057aee04563000000002"
+			]
+		},
+		{
+			"Name": "/Engine/EngineSky/T_Sky_Stars",
+			"PackageChunkId": "56d51199b9b2142a00000001",
+			"BulkDataChunkIds": [
+				"56d51199b9b2142a00000002"
+			]
+		},
+		{
+			"Name": "/Engine/EditorMeshes/ColorCalibrator/T_ColorGrid",
+			"PackageChunkId": "1842125bcd19545d00000001",
+			"BulkDataChunkIds": [
+				"1842125bcd19545d00000002"
+			]
+		},
+		{
 			"Name": "/Engine/EditorMeshes/ColorCalibrator/M_ClearCoat",
 			"PackageChunkId": "76a5acb679b315ed00000001"
 		},
@@ -10016,44 +10044,20 @@
 			"PackageChunkId": "6ebbe4a6ced841cc00000001"
 		},
 		{
-			"Name": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale",
-			"PackageChunkId": "4762b775bfe4b22d00000001"
-		},
-		{
 			"Name": "/Engine/EngineDebugMaterials/M_VolumeRenderSphereTracePP",
 			"PackageChunkId": "3bf2df25e14476d700000001"
+		},
+		{
+			"Name": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale",
+			"PackageChunkId": "4762b775bfe4b22d00000001"
 		},
 		{
 			"Name": "/Engine/EngineMaterials/PhAT_JointLimitMaterial",
 			"PackageChunkId": "305a1ec18dd5a4be00000001"
 		},
 		{
-			"Name": "/Game/MilitaryWeapSilver/FX/Textures/T_Explosion_8x8_A_01",
-			"PackageChunkId": "9b97057aee04563000000001",
-			"BulkDataChunkIds": [
-				"9b97057aee04563000000002"
-			]
-		},
-		{
-			"Name": "/Engine/EngineSky/T_Sky_Clouds_M",
-			"PackageChunkId": "927b2fe4876a1f7400000001",
-			"BulkDataChunkIds": [
-				"927b2fe4876a1f7400000002"
-			]
-		},
-		{
-			"Name": "/Engine/EngineSky/T_Sky_Stars",
-			"PackageChunkId": "56d51199b9b2142a00000001",
-			"BulkDataChunkIds": [
-				"56d51199b9b2142a00000002"
-			]
-		},
-		{
-			"Name": "/Engine/EditorMeshes/ColorCalibrator/T_ColorGrid",
-			"PackageChunkId": "1842125bcd19545d00000001",
-			"BulkDataChunkIds": [
-				"1842125bcd19545d00000002"
-			]
+			"Name": "/ControlRig/M_Manip",
+			"PackageChunkId": "9a5a67fa3c2b2de900000001"
 		},
 		{
 			"Name": "/Engine/MapTemplates/Sky/DaylightAmbientCubemap",
@@ -10065,10 +10069,6 @@
 			"BulkDataChunkIds": [
 				"658124b753b579cd00000002"
 			]
-		},
-		{
-			"Name": "/ControlRig/M_Manip",
-			"PackageChunkId": "9a5a67fa3c2b2de900000001"
 		},
 		{
 			"Name": "/Paper2D/DummySprite",
@@ -11779,10 +11779,6 @@
 			]
 		},
 		{
-			"Name": "/Game/StarterContent/Particles/P_Steam_Lit",
-			"PackageChunkId": "84816d3b2f78cf0700000001"
-		},
-		{
 			"Name": "/Game/StarterContent/Props/SM_Shelf",
 			"PackageChunkId": "f12414bdff4d204500000001",
 			"BulkDataChunkIds": [
@@ -11895,12 +11891,16 @@
 			"PackageChunkId": "08be7b5472ca8ff500000001"
 		},
 		{
-			"Name": "/Game/StarterContent/Particles/P_Smoke",
-			"PackageChunkId": "1a319e90fcce3b1e00000001"
-		},
-		{
 			"Name": "/Game/MilitaryWeapSilver/Weapons/Materials/M_AssaultRifle_01",
 			"PackageChunkId": "87199fe4319eee1700000001"
+		},
+		{
+			"Name": "/Game/StarterContent/Particles/P_Steam_Lit",
+			"PackageChunkId": "84816d3b2f78cf0700000001"
+		},
+		{
+			"Name": "/Game/StarterContent/Particles/P_Smoke",
+			"PackageChunkId": "1a319e90fcce3b1e00000001"
 		},
 		{
 			"Name": "/Game/MilitaryWeapSilver/Pickups/Materials/M_Pickups_Inst",
@@ -11994,12 +11994,12 @@
 			"PackageChunkId": "970baa807995ae1700000001"
 		},
 		{
-			"Name": "/Game/MilitaryWeapSilver/FX/P_Shotgun_Tracer_01",
-			"PackageChunkId": "ce20ff24b0710b6500000001"
-		},
-		{
 			"Name": "/Game/MilitaryWeapSilver/FX/P_Pistol_Tracer_01",
 			"PackageChunkId": "1f3e4a00173695f500000001"
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/FX/P_AssaultRifle_Tracer_01",
+			"PackageChunkId": "93167234fa51827f00000001"
 		},
 		{
 			"Name": "/Game/MilitaryWeapSilver/FX/P_RocketLauncher_MuzzleFlash_Rear_01",
@@ -12022,8 +12022,16 @@
 			"PackageChunkId": "47f5a07c59de395200000001"
 		},
 		{
+			"Name": "/Game/MilitaryWeapSilver/FX/P_Impact_Stone_Small_01",
+			"PackageChunkId": "c87bf3736f89ac7c00000001"
+		},
+		{
 			"Name": "/Game/MilitaryWeapSilver/FX/P_SniperRifle_Tracer_01",
 			"PackageChunkId": "41002bde9d74056d00000001"
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/FX/P_Shotgun_Tracer_01",
+			"PackageChunkId": "ce20ff24b0710b6500000001"
 		},
 		{
 			"Name": "/Game/AnimStarterPack/BS_Jog",
@@ -12083,12 +12091,8 @@
 			"PackageChunkId": "3a0245e4904b10b500000001"
 		},
 		{
-			"Name": "/Game/MilitaryWeapSilver/FX/P_Impact_Stone_Small_01",
-			"PackageChunkId": "c87bf3736f89ac7c00000001"
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/FX/P_AssaultRifle_Tracer_01",
-			"PackageChunkId": "93167234fa51827f00000001"
+			"Name": "/Engine/EngineMaterials/Widget3DPassThrough_Opaque_OneSided",
+			"PackageChunkId": "0e6a0028be3a2a6c00000001"
 		},
 		{
 			"Name": "/Game/StarterContent/Particles/P_Explosion",
@@ -12101,10 +12105,6 @@
 		{
 			"Name": "/Game/StarterContent/Particles/P_Fire",
 			"PackageChunkId": "d9b417805ca28c3b00000001"
-		},
-		{
-			"Name": "/Engine/EngineMaterials/Widget3DPassThrough_Opaque_OneSided",
-			"PackageChunkId": "0e6a0028be3a2a6c00000001"
 		},
 		{
 			"Name": "/Engine/EngineMaterials/Widget3DPassThrough_Translucent_OneSided",
@@ -12243,6 +12243,10 @@
 			"PackageChunkId": "f1d62d3af069363200000001"
 		},
 		{
+			"Name": "/Game/MilitaryWeapSilver/FX/P_Impact_Stone_Large_01",
+			"PackageChunkId": "d7834a5b1f2cf4d600000001"
+		},
+		{
 			"Name": "/Engine/EngineSky/BP_Sky_Sphere",
 			"PackageChunkId": "cdbcbf4a06978c3b00000001"
 		},
@@ -12289,16 +12293,12 @@
 			"PackageChunkId": "368650c1fabbcfa500000001"
 		},
 		{
-			"Name": "/Game/MilitaryWeapSilver/FX/P_Pistol_MuzzleFlash_01",
-			"PackageChunkId": "6ae3ff249214a3d800000001"
+			"Name": "/Game/MilitaryWeapSilver/FX/P_SniperRifle_MuzzleFlash_01",
+			"PackageChunkId": "8f0d555446bab93e00000001"
 		},
 		{
-			"Name": "/Game/MilitaryWeapSilver/FX/P_Grenade_MuzzleFlash_01",
-			"PackageChunkId": "792a133e5168e2bb00000001"
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/FX/P_Impact_Stone_Large_01",
-			"PackageChunkId": "d7834a5b1f2cf4d600000001"
+			"Name": "/Game/MilitaryWeapSilver/FX/P_Shotgun_MuzzleFlash_01",
+			"PackageChunkId": "8b95998055923ad300000001"
 		},
 		{
 			"Name": "/Game/MilitaryWeapSilver/FX/P_Impact_Metal_Small_01",
@@ -12324,20 +12324,24 @@
 			]
 		},
 		{
-			"Name": "/Game/MilitaryWeapSilver/FX/P_SniperRifle_MuzzleFlash_01",
-			"PackageChunkId": "8f0d555446bab93e00000001"
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/FX/P_Shotgun_MuzzleFlash_01",
-			"PackageChunkId": "8b95998055923ad300000001"
-		},
-		{
 			"Name": "/Game/MilitaryWeapSilver/FX/P_RocketLauncher_MuzzleFlash_Front_01",
 			"PackageChunkId": "b1546080e12948e800000001"
 		},
 		{
 			"Name": "/Game/MilitaryWeapSilver/FX/P_RocketLauncher_Explosion_01",
 			"PackageChunkId": "3b97a21020ec1da200000001"
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/FX/P_Pistol_MuzzleFlash_01",
+			"PackageChunkId": "6ae3ff249214a3d800000001"
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/FX/P_Grenade_MuzzleFlash_01",
+			"PackageChunkId": "792a133e5168e2bb00000001"
+		},
+		{
+			"Name": "/Game/MilitaryWeapSilver/FX/P_Grenade_Explosion_01",
+			"PackageChunkId": "342786901c92400800000001"
 		},
 		{
 			"Name": "/Game/StarterContent/Blueprints/BP_LightStudio",
@@ -12378,10 +12382,6 @@
 		{
 			"Name": "/Game/StarterContent/Maps/Minimal_Default",
 			"PackageChunkId": "c18c1e9eb562281d00000001"
-		},
-		{
-			"Name": "/Game/MilitaryWeapSilver/FX/P_Grenade_Explosion_01",
-			"PackageChunkId": "342786901c92400800000001"
 		},
 		{
 			"Name": "/Game/MilitaryWeapSilver/FX/P_AssaultRifle_MuzzleFlash",
